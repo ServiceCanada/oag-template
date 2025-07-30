@@ -43,7 +43,8 @@ layout: default
 </section>
 <section class="alert alert-info">
     <h3>Alerte info</h3>
-    <p>Détails de l'alerte.</p><p>Détails de l'alerte avec 2 paragraphes.</p>
+    <p>Détails de l'alerte.</p>
+    <p>Détails de l'alerte avec 2 paragraphes.</p>
 </section>
 <h3>Exemple de code</h3>
 <pre><code>&lt;section class=&quot;alert alert-info&quot;&gt;
@@ -80,6 +81,16 @@ layout: default
 <pre><code>&lt;div class=&quot;well&quot;&gt;
     &lt;p&gt;Well - apparence par défaut&lt;/p&gt;
 &lt;/div&gt;</code></pre>
+
+<h2>Style de rayon de bordure OAG</h2>
+<div class="well oag-rds">
+    <p>Well avec le style de rayon de bordure OAG</p>
+</div>
+<h3>Exemple de code</h3>
+<pre><code>&lt;div class=&quot;well oag-rds&quot;&gt;
+    &lt;p&gt;Well avec le style de rayon de bordure OAG&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
 
 <h2>Bloc de citation</h2>
 <blockquote>
@@ -126,7 +137,7 @@ layout: default
         <div class="col-md-6 col-lg-4">
             <h3><a href="#">[Texte du lien]</a></h3>
             <p>Utilisez des verbes d'action ou listez simplement des mots-clés pour résumer les informations ou les tâches qui peuvent être accomplies sur la page vers laquelle il renvoie</p>
-        </div>    
+        </div>
     </div>
 </section>
 <h3>Code sample</h3>
@@ -147,3 +158,46 @@ layout: default
         &lt;/div&gt;    
     &lt;/div&gt;
 &lt;/section&gt;</code></pre>
+
+<h2>Interface à onglets - variante verticale</h2>
+<p>Avec stockage de session pour se souvenir du dernier onglet consulté.</p>
+<div class="wb-tabs vertical">
+    <div class="tabpanels">
+        <details id="details-panel1">
+            <summary>Exemple 1</summary>
+            <p>
+                Depuis des temps immémoriaux, les hommes du Nord <a href="#details-panel3">Exemple 3</a> comptaient parmi les marins les plus audacieux et habiles jamais connus. Ils construisaient de grands bateaux en bois avec des proues et poupes hautes et élancées. Ces navires, bien qu’ouverts et sans ponts, étaient solides et aptes à la navigation. On en a retrouvé des vestiges, parfois profondément enfouis sous le sable et presque intacts. Un de ces navires, découvert sur la côte du Danemark, mesurait 72 pieds de long. Un autre, mis au jour en Norvège et conservé au musée de Christiania, mesurait 78 pieds de long et 17 pieds de large. Une des anciennes sagas nordiques raconte que le roi Olaf Tryggvesson fit construire un navire dont la quille, posée sur l’herbe, mesurait 74 coudées ; ce qui correspondrait aujourd’hui à un navire d’environ 942 tonnes. Même en tenant compte d’une possible exagération ou ignorance de l’auteur, il existe un contraste frappant entre ce navire et le petit Centurion avec lequel Anson fit le tour du monde.
+            </p>
+        </details>
+        <details id="details-panel2" open="open">
+            <summary>Exemple 2</summary>
+            <p>
+                Il est cependant inutile de prouver que les hommes du Nord pouvaient atteindre l’Amérique avec leurs navires. Les voyages entre l’Islande et le Groenland, qu’ils ont effectués continuellement pendant quatre cents ans, étaient tout aussi ardus qu’un voyage supplémentaire vers la côte canadienne.
+            </p>
+        </details>
+        <details id="details-panel3">
+            <summary>Exemple 3</summary>
+            <p>
+                L’histoire des hommes du Nord se déroule ainsi. Vers la fin du IXe siècle, soit près de deux cents ans avant la conquête normande, il y eut un grand exode des Norvégiens depuis leur patrie d’origine. Un certain roi Harald avait réussi à s’imposer en Norvège, et de nombreux chefs ou jarls préférèrent chercher de nouvelles terres plutôt que de se soumettre à son autorité. Ils embarquèrent donc avec leurs compagnons marins — les Vikings, comme on les appelle encore — souvent même avec leurs femmes et enfants, à bord de grands navires ouverts, et partirent vers les côtes d’Angleterre, de France, voire jusqu’en Méditerranée, où ils servirent les empereurs byzantins. Mais d’autres, aimant les mers froides et agitées du nord, prirent la direction de l’ouest, traversèrent la mer du Nord et atteignirent l’Islande en 874. Ils y fondèrent une colonie qui atteignit bientôt une population de cinquante mille personnes, avec troupeaux, maisons en pierre et un commerce florissant de poisson et d’huile avec les pays d’Europe du Nord. Ces colons islandais atteignirent un haut niveau de civilisation. Ils possédaient de nombreux livres et aimaient les contes et récits, comme tous les peuples nordiques qui passent de longues soirées d’hiver au coin du feu. Certaines sagas qu’ils racontaient étaient des récits véridiques de voyages et d’aventures ; d’autres étaient des fictions, semblables à nos romans modernes ; d’autres encore mêlaient les deux. Il est donc parfois difficile de distinguer le vrai du faux dans ces récits anciens. Nous disposons cependant de moyens pour les vérifier. Parmi les livres écrits en Islande, il y avait le « Livre national des noms », où figuraient tous les noms des habitants, avec des récits sur leurs ancêtres et leurs hauts faits.
+            </p>
+        </details>
+    </div>
+</div>
+<h3>Exemple de code</h3>
+<pre><code>&lt;div class=&quot;wb-tabs vertical&quot;&gt;
+    &lt;div class=&quot;tabpanels&quot;&gt;
+        &lt;details id=&quot;details-panel1&quot;&gt;
+            &lt;summary&gt;Exemple 1&lt;/summary&gt;
+            &lt;p&gt;
+                ...
+            &lt;/p&gt;
+        &lt;/details&gt;
+        &lt;details id=&quot;details-panel2&quot; open=&quot;open&quot;&gt;
+            &lt;summary&gt;Exemple 2&lt;/summary&gt;
+            &lt;p&gt;
+                ...
+            &lt;/p&gt;
+        &lt;/details&gt;
+        ...
+    &lt;/div&gt;    
+&lt;/div&gt;</code></pre>

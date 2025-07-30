@@ -1,0 +1,123 @@
+---
+title: "Audit Reports"
+altLangPage: "listing-reports-fr.html"
+dateModified: "2025-08-05"
+description: "Office of the Auditor General of Canada - Audit Reports listing page"
+language: "en"
+pageclass: "oag-theme wb-prettify all-pre"
+layout: default
+---
+
+<section id="filteredReportsList" class="wb-filter wb-tagfilter wb-paginate provisional" data-wb-filter='{
+		"selector": ".listing-card",
+		"section": ".reports-list",
+		"uiTemplate": "#searchFilter"
+	}' data-wb-paginate='{
+		"itemsPerPage": 6,
+		"selector": ".listing-card",
+		"section": ".reports-list",
+		"uiTarget": "#filteredReportsListPagination"
+	}'>
+	<div class="row mrgn-tp-lg">
+		<div id="searchFilter">
+			
+			<div class="col-xs-12 col-sm-4 col-lg-3">
+				<p class="h3 wb-fltr-info mrgn-tp-0"><span data-nbitem></span> Results</p>
+				<details open>
+					<summary>
+						<h3>Filter options</h3>
+					</summary>
+					<div class="form-group">
+						<label for="customSearchUI">Search Report Title</label>
+						<input type="search" class="form-control full-width" id="customSearchUI" data-wbfltrid="filteredReportsList" aria-controls="filteredReportsList" placeholder="Search...">
+					</div>
+					<!-- Type of reports -->
+					<div class="form-group mrgn-bttm-0">
+						<fieldset>
+							<legend class="h5 mrgn-tp-0"><span class="field-name">Type of Report</span></legend>
+							<ul class="list-unstyled">
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__ag_reports"> Auditor General Reports
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__cesd_reports"> Commissioner of the Environment and Sustainable Development Reports
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__nla_reports"> Northern Legislative Assemblies Reports
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__cc_reports"> Crown Corporations Reports
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+					<hr>
+					<!-- Topic -->
+					<div class="form-group mrgn-bttm-0">
+						<label for="topicList">Topic</label>
+						<select id="topicList" name="topic" class="form-control full-width wb-tagfilter-ctrl">
+							<option value="">All</option>
+							<option value="topic__housing">Housing</option>
+							<option value="topic__human_rights">Human Rights</option>
+							<option value="topic__income_security">Income Security</option>
+							<option value="topic__information_management">Information Management</option>
+						</select>
+					</div>
+					<hr>				
+					<div class="form-group mrgn-bttm-0">
+						<label for="releaseYear">Release Year</label>
+						<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl">
+							<option value="">All</option>
+							<option value="year__2025">2025</option>
+							<option value="year__2024">2024</option>
+							<option value="year__2023">2023</option>
+							<option value="year__2022">2022</option>
+							<option value="year__2021">2021</option>
+						</select>
+					</div>
+					<hr>
+					<div class="bg-light p-3 mt-3 small">
+						<h4>Older Reports</h4>
+						<p>To view reports published over 5 years ago, please consult the <a href="https://canada.ca">Government of Canada Publications site</a>.</p>
+					</div>
+				</details>
+			</div>
+		</div>
+		<!-- Reports listing -->
+		<div class="col-xs-12 col-sm-8 col-lg-9">
+			<div class="row wb-eqht-grd hght-inhrt reports-list wb-tagfilter-items" data-wb-json='{
+					"url": "reports_en.json#/events",
+					"mapping": [
+						
+						{ "selector": ".listing-card", "attr": "data-wb-tags", "value": "/tags" },
+						{ "selector": ".label-primary", "attr": "data-report-type", "value": "/type" },
+						{ "selector": ".report-type", "value": "/type" },
+						{ "selector": ".report-title", "value": "/title" }
+					]
+				}'>
+				<template>
+					<div class="col-sm-6 col-md-4 listing-card" data-wb-tags="">
+						<article class="oag-card bg-light oag-shadow h-100">
+							<img src="../assets/img/report-card.png " alt="media icon">
+							<a href="#" class="stretched-link no-undrln mb-2"><span class="label label-primary" data-report-type=""><span class="report-type"></span> Reports</span></a>
+							<h3 class="report-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h3>
+						</article>
+					</div>
+				</template>
+				
+			</div>
+			<div class="wb-tagfilter-noresult">
+				<p>No item match this combination of filters.</p>
+			</div>			
+			<div id="filteredReportsListPagination"></div>
+		</div>
+	</div>
+</section>

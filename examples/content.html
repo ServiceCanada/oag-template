@@ -1,6 +1,6 @@
 ---
 altLangPage: "content-fr.html"
-dateModified: "2025-04-08"
+dateModified: "2025-05-08"
 description: "Office of the Auditor General of Canada content page"
 language: "en"
 pageclass: "oag-theme wb-prettify all-pre"
@@ -8,7 +8,7 @@ title: "OAG - content page"
 layout: default
 ---
 
-<p>Note: This page showcases examples of CSS classes, components, and other elements from GCWeb that have been customized or overwritten for this project. These modifications were made to better align with the specific requirements and design goals of the project.</p>
+<p class="lead">Note: This page showcases examples of CSS classes, components, and other elements from GCWeb that have been customized or overwritten for this project. These modifications were made to better align with the specific requirements and design goals of the project.</p>
 <p>For a complete list of features, please visit the <a href="https://wet-boew.github.io/GCWeb/index-en.html">GCWeb website</a>. Refer to the documentation for detailed information on each change.</p>
 
 <h2>Heading h2</h2>
@@ -36,7 +36,7 @@ layout: default
 &lt;p&gt;&lt;button class=&quot;btn btn-primary&quot;&gt;Primary button style&lt;/button&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Link with primary button style&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Button link style&lt;/a&gt;&lt;/p&gt;</code></pre>
-	
+
 
 <h2>Alert with headings</h2>
 <section class="alert alert-info">
@@ -45,7 +45,8 @@ layout: default
 </section>
 <section class="alert alert-info">
 	<h3>Info alert</h3>
-	<p>Alert details.</p><p>Alert details with 2 paragraphs.</p>
+	<p>Alert details.</p>
+	<p>Alert details with 2 paragraphs.</p>
 </section>
 <h3>Code sample</h3>
 <pre><code>&lt;section class=&quot;alert alert-info&quot;&gt;
@@ -56,8 +57,8 @@ layout: default
     &lt;h3&gt;Info alert&lt;/h3&gt;
     &lt;p&gt;Alert details.&lt;/p&gt;
     &lt;p&gt;Alert details with 2 paragraphs.&lt;/p&gt;
-&lt;/section&gt;</code></pre>	
-	
+&lt;/section&gt;</code></pre>
+
 
 <h2>Primary label class</h2>
 <p>Some text here <span class="label label-primary">(Label info)</span></p>
@@ -77,16 +78,25 @@ layout: default
 <pre><code>&lt;p class="text-primary"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</code></pre>
 
 
-<h2>Well class</h2>
-<div class="well">
-	<p>Well - default appearance</p>
+<h2>OAG Border radius with background light style</h2>
+<div class="oag-rds bg-light p-3">
+	<p>OAG border radius style</p>
 </div>
 <h3>Code sample</h3>
-<pre><code>&lt;div class=&quot;well&quot;&gt;
-	&lt;p&gt;Well - default appearance&lt;/p&gt;
+<pre><code>&lt;div class=&quot;oag-rds bg-light p-3 &quot;&gt;
+	&lt;p&gt;OAG border radius style&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 
-	
+<h2>OAG Border radius with shadow effect</h2>
+<div class="oag-brdr oag-rds oag-shadow p-3">
+	<p>Border radius and shadow applied to this div.</p>
+</div>
+<h3>Code sample</h3>
+<pre><code>&lt;div class=&quot;oag-brdr oag-rds oag-shadow p-3&quot;&gt;
+    &lt;p&gt;Border radius and shadow applied to this div.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
 <h2>Blockquote</h2>
 <blockquote>
 	<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
@@ -97,26 +107,6 @@ layout: default
 	&lt;p&gt;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&mdash; Author&lt;br&gt; Example text&lt;/p&gt;</code></pre>
-	
-	
-<h2>Default panel</h2>
-<section class="panel panel-default">
-	<header class="panel-heading">
-	 <h3 class="panel-title">Panel title</h3>
-	</header>
-	<div class="panel-body">
-	 <p>Panel body</p>
-	</div>
-</section>
-<h3>Code sample</h3>
-<pre><code>&lt;section class=&quot;panel panel-default&quot;&gt;
-	&lt;header class=&quot;panel-heading&quot;&gt;
-		&lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;/h3&gt;
-	&lt;/header&gt;
-	&lt;div class=&quot;panel-body&quot;&gt;
-		&lt;p&gt;Panel body&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/section&gt;</code></pre>
 
 <h2>Services and information: 3 columns pattern</h2>
 <section class="gc-srvinfo">
@@ -133,7 +123,7 @@ layout: default
 		<div class="col-md-6 col-lg-4">
 			<h3><a href="#">[Hyperlink text]</a></h3>
 			<p>Use action verbs, or simply list keywords to summarize the information or tasks that can be accomplished on the page it links to</p>
-		</div>	
+		</div>
 	</div>
 </section>
 <h3>Code</h3>
@@ -154,3 +144,164 @@ layout: default
 		&lt;/div&gt;	
 	&lt;/div&gt;
 &lt;/section&gt;</code></pre>
+
+<h2>Download link</h2>
+<div class="row">
+	<div class="col-sm-4">
+		<a class="gc-dwnld-lnk no-undrln mb-4" href="#">
+			<div class="gc-dwnld">
+				<p><img class="img-responsive thumbnail report-thumbnail gc-dwnld-img" src="../assets/img/report-card.png" alt="Public Housing in Nunavut" /></p>
+				<p class="gc-dwnld-txt bg-light p-3">
+					<span>Download Report</span>
+					<span class="gc-dwnld-info">(<abbr title="Portable Document Format">PDF</abbr>, 273 <abbr title="KiloByte">KB</abbr>)</span>
+				</p>
+			</div>
+		</a>
+	</div>
+</div>
+<h3>Code sample</h3>
+<pre><code>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;a class=&quot;gc-dwnld-lnk no-undrln mb-4&quot; href=&quot;#&quot;&gt;
+            &lt;div class=&quot;gc-dwnld&quot;&gt;
+                &lt;p&gt;&lt;img class=&quot;img-responsive thumbnail report-thumbnail gc-dwnld-img&quot; src=&quot;../assets/img/report-card.png&quot; alt=&quot;Public Housing in Nunavut&quot; /&gt;&lt;/p&gt;
+                &lt;p class=&quot;gc-dwnld-txt bg-light p-3&quot;&gt;
+                    &lt;span&gt;Download Report&lt;/span&gt;
+                    &lt;span class=&quot;gc-dwnld-info&quot;&gt;(&lt;abbr title=&quot;Portable Document Format&quot;&gt;PDF&lt;/abbr&gt;, 273 &lt;abbr title=&quot;KiloByte&quot;&gt;KB&lt;/abbr&gt;)&lt;/span&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+<h2>Tabbed interface - vertical variant</h2>
+<p>With session storage to remember last tab viewed. </p>
+<div class="wb-tabs vertical">
+	<div class="tabpanels">
+		<details id="details-panel1">
+			<summary>Example 1</summary>
+			<p>
+				From time immemorial the Norsemen <a href="#details-panel3">Example 3</a> were among the most daring and skilful mariners ever known. They built great wooden boats with tall, sweeping bows and sterns. These ships, though open and without decks, were yet stout and seaworthy. Their remains have been found, at times lying deeply buried under the sand and preserved almost intact. One such vessel, discovered on the shore of Denmark, measured 72 feet in length. Another Viking ship, which was dug up in Norway, and which is preserved in the museum at Christiania, was 78 feet long and 17 feet wide. One of the old Norse sagas, or stories, tells how King Olaf Tryggvesson built a ship, the keel of which, as it lay on the grass, was 74 ells long; in modern measure, it would be a vessel of about 942 tons burden. Even if we make allowance for the exaggeration or ignorance of the writer of the saga, there is still a vast contrast between this vessel and the little ship Centurion in which Anson sailed round the world.
+			</p>
+		</details>
+		<details id="details-panel2" open="open">
+			<summary>Example 2</summary>
+			<p>
+				It is needless, however, to prove that the Norsemen could have reached America in their ships. The voyages from Iceland to Greenland which we know they made continually for four hundred years were just as arduous as a further voyage from Greenland to the coast of Canada.
+			</p>
+		</details>
+		<details id="details-panel3">
+			<summary>Example 3</summary>
+			<p>
+				The story of the Norsemen runs thus. Towards the end of the ninth century, or nearly two hundred years before the Norman conquest, there was a great exodus or outswarming of the Norsemen from their original home in Norway. A certain King Harold had succeeded in making himself supreme in Norway, and great numbers of the lesser chiefs or jarls preferred to seek new homes across the seas rather than submit to his rule. So they embarked with their seafaring followers—Vikings, as we still call them—often, indeed, with their wives and families, in great open ships, and sailed away, some to the coast of England, others to France, and others even to the Mediterranean, where they took service under the Byzantine emperors. But still others, loving the cold rough seas of the north, struck westward across the North Sea and beyond the coasts of Scotland till they reached Iceland. This was in the year 874. Here they made a settlement that presently grew to a population of fifty thousand people, having flocks and herds, solid houses of stone, and a fine trade in fish and oil with the countries of Northern Europe. These settlers in Iceland attained to a high standard of civilization. They had many books, and were fond of tales and stories, as are all these northern peoples who spend long winter evenings round the fireside. Some of the sagas, or stories, which they told were true accounts of the voyages and adventures of their forefathers; others were fanciful stories, like our modern romances, created by the imagination; others, again, were a mixture of the two. Thus it is sometimes hard to distinguish fact and fancy in these early tales of the Norsemen. We have, however, means of testing the stories. Among the books written in Iceland there was one called the 'National Name-Book,' in which all the names of the people were written down, with an account of their forefathers and of any notable things which they had done.
+			</p>
+		</details>
+	</div>
+</div>
+<h3>Code sample</h3>
+<pre><code>&lt;div class=&quot;wb-tabs vertical&quot;&gt;
+	&lt;div class=&quot;tabpanels&quot;&gt;
+		&lt;details id=&quot;details-panel1&quot;&gt;
+			&lt;summary&gt;Example 1&lt;/summary&gt;
+			&lt;p&gt;
+				...
+			&lt;/p&gt;
+		&lt;/details&gt;
+		&lt;details id=&quot;details-panel2&quot; open=&quot;open&quot;&gt;
+			&lt;summary&gt;Example 2&lt;/summary&gt;
+			&lt;p&gt;
+				...
+			&lt;/p&gt;
+		&lt;/details&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<h2>Default card</h2>
+<article class="oag-card bg-light">
+	<header class="mb-3">
+		<span class="label label-primary fnt-hdng">News Release</span>
+		<time datetime="2025-03-18" class="small"><span>April 18, 2025</span></time>
+	</header>
+	<p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+	<a href="#" class="pull-right no-undrln btn btn-link ml-auto mt-auto">Read more &rarr;</a>
+</article>
+<h3>Code sample</h3>
+<pre><code>&lt;article class=&quot;oag-card bg-light&quot;&gt;
+    &lt;header class=&quot;mb-3&quot;&gt;
+        &lt;span class=&quot;label label-primary fnt-hdng&quot;&gt;News Release&lt;/span&gt;
+        &lt;time datetime=&quot;2025-03-18&quot; class=&quot;small&quot;&gt;&lt;span&gt;April 18, 2025&lt;/span&gt;&lt;/time&gt;
+    &lt;/header&gt;
+    &lt;p class=&quot;mb-3&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;pull-right no-undrln btn btn-link ml-auto mt-auto&quot;&gt;Read more &amp;rarr;&lt;/a&gt;
+&lt;/article&gt;</code></pre>
+
+<h2>Card with image on the left side</h2>
+<div class="row">
+	<div class="col-sm-6">
+		<article class="oag-card bg-light">
+			<div class="row wb-eqht-grd">
+				<div class="align-items-center col-sm-3">
+					<img src="../assets/img/media-icon.png" alt="media icon" class="oag-rds-sm">
+				</div>
+				<div class="col-sm-9">
+					<h3><a href="#" class="stretched-link no-undrln">Media Inquiries</a>
+					</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna.</p>
+				</div>
+			</div>
+		</article>
+	</div>	
+</div>
+<h3>Code sample</h3>
+<pre><code>&lt;article class=&quot;oag-card bg-light&quot;&gt;
+    &lt;div class=&quot;row wb-eqht-grd&quot;&gt;
+        &lt;div class=&quot;align-items-center col-sm-3&quot;&gt;
+            &lt;img src=&quot;../assets/img/media-icon.png&quot; alt=&quot;media icon&quot; class=&quot;oag-rds-sm&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-9&quot;&gt;
+            &lt;h3&gt;&lt;a href=&quot;#&quot; class=&quot;stretched-link no-undrln&quot;&gt;Media Inquiries&lt;/a&gt;&lt;/h3&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+
+
+<div class="row wb-eqht-grd">
+	<div class="col-xs-12"><h2>Card with image on the top</h2></div>
+	<div class="col-xs-12 col-sm-6">
+		<article class="oag-card bg-light oag-shadow">
+			<img src="../assets/img/report-card.png " alt="media icon">
+			<a href="#" class="stretched-link no-undrln mb-2"><span class="label label-primary">Media Inquiries</span></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+		</article>
+	</div>	
+</div>
+<h3>Code sample</h3>
+<pre><code>&lt;article class=&quot;oag-card bg-light oag-shadow&quot;&gt;
+    &lt;img src=&quot;../assets/img/report-card.png&quot; alt=&quot;media icon&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;stretched-link no-undrln mb-2&quot;&gt;&lt;span class=&quot;label label-primary&quot;&gt;Media Inquiries&lt;/span&gt;&lt;/a&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+
+<h2>Card with border</h2>
+<article class="oag-card bg-light oag-brdr">
+	<header class="card-header mb-3">
+		<span class="label label-primary">News Release</span>
+		<time datetime="2025-03-18" class="fw-bold small text-uppercase"><span>April 18, 2025</span></time>
+	</header>
+	<p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+	<a href="#" class="pull-right no-undrln btn btn-link ml-auto mt-auto">Read more &rarr;</a>
+</article>
+<h3>Code sample</h3>
+<pre><code>&lt;article class=&quot;oag-card bg-light oag-brdr&quot;&gt;
+    &lt;header class=&quot;card-header mb-3&quot;&gt;
+        &lt;span class=&quot;label label-primary&quot;&gt;News Release&lt;/span&gt;
+        &lt;time datetime=&quot;2025-03-18&quot; class=&quot;fw-bold small text-uppercase&quot;&gt;&lt;span&gt;April 18, 2025&lt;/span&gt;&lt;/time&gt;
+    &lt;/header&gt;
+    &lt;p class=&quot;mb-3&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;pull-right no-undrln btn btn-link ml-auto mt-auto&quot;&gt;Read more &amp;rarr;&lt;/a&gt;
+&lt;/article&gt;</code></pre>
