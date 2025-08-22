@@ -1,94 +1,95 @@
 {
     "events": [
         {
-            "tags": "type__media_advisory year__2025 topic__housing",
+            "tags": "type__media_advisory year__2025 type__auditor_general_reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2025",
-            "date": "2025-06-27",
-            "type": "Media Advisory"
+            "date": "June 27, 2025",
+            "type": "AG Reports"
         },
         {
-            "tags": "type__opening_statement year__2025 topic__income_security",
+            "tags": "type__crown_corporation_reports year__2025 type__northern_legislative_assemblies_reports",
             "title": "Lessons Learned from Canada's Record on Sustainable Development",
             "year": "2025",
-            "date": "2025-05-15",
-            "type": "News Conference"
+            "date": "May 15, 2025",
+            "type": "NLA Reports"
         },
         {
-            "tags": "type__news_release year__2024 topic__income_security",
+            "tags": "type__news_release year__2024 type__northern_legislative_assemblies_reports",
             "title": "Child and Family Services",
             "year": "2024",
-            "date": "2024-04-01",
-            "type": "News Release"
+            "date": "April 1, 2024",
+            "type": "NLA Reports"
         },
         {
-            "tags": "type__news_release year__2023 topic__income_security",
+            "tags": "type__news_release year__2023 type__northern_legislative_assemblies_reports",
             "title": "Child and Family Services",
             "year": "2023",
-            "date": "2023-02-01",
-            "type": "News Release"
+            "date": "February 1, 2023",
+            "type": "NLA Reports"
         },
         {
-            "tags": "type__news_release year__2023 topic__income_security",
+            "tags": "type__news_release year__2023 type__northern_legislative_assemblies_reports",
             "title": "Child and Family Services",
             "year": "2023",
-            "date": "2023-12-01",
-            "type": "News Release"
+            "date": "December 1, 2023",
+            "type": "NLA Reports"
         },
         {
-            "tags": "type__opening_statement year__2025 topic__income_security",
+            "tags": "type__crown_corporation_reports year__2025 type__northern_legislative_assemblies_reports",
             "title": "Lesons Learned from Canada's Record on Sustainable Development",
             "year": "2024",
-            "date": "2024-04-05",
-            "type": "News Conference"
+            "date": "April 5, 2024",
+            "type": "NLA Reports"
         },
         {
-            "tags": "type__opening_statement year__2025 topic__information_management",
+            "tags": "type__crown_corporation_reports year__2025 topic__information_management",
             "title": "Lessons Learned from Canada's Record on Sustainable Development",
             "year": "2025",
-            "date": "2025-05-05",
-            "type": "News Conference"
+            "date": "May 5, 2025",
+            "type": "NLA Reports"
         },
         {
-            "tags": "type__opening_statement year__2025 topic__information_management",
+            "tags": "type__crown_corporation_reports year__2025 topic__information_management",
             "title": "Lessons Learned from Canada's Record on Sustainable Development",
             "year": "2025",
-            "date": "2025-04-05",
-            "type": "News Conference"
+            "date": "April 5, 2025",
+            "type": "NLA Reports"
         },
         {
-            "tags": "type__media_advisory year__2022 topic__housing",
+            "tags": "type__media_advisory year__2022 type__commissioner",
             "title": "Housing for Canadian Armed Forces",
             "year": "2022",
-            "date": "2022-02-01",
-            "type": "Media Advisory"
+            "date": "February 1, 2022",
+            "type": "CESD Reports"
         },
         {
-            "tags": "type__media_advisory year__2021 topic__housing",
+            "tags": "type__media_advisory year__2021 type__auditor_general_reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2021",
-            "date": "2021-10-01",
-            "type": "Media Advisory"
+            "date": "October 1, 2021",
+            "type": "AG Reports"
         },
         {
-            "tags": "type__media_advisory year__2020 topic__housing",
+            "tags": "type__media_advisory year__2020 type__auditor_general_reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2020",
-            "type": "Media Advisory"
+            "date": "September 1, 2020",
+            "type": "AG Reports"
         },
         {
-            "tags": "type__media_advisory year__2022 topic__housing",
+            "tags": "type__media_advisory year__2022 type__auditor_general_reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2022",
-            "date": "2022-08-01",
-            "type": "Media Advisory"
+            "date": "August 1, 2022",
+            "type": "AG Reports"
         },
         {
-            "tags": "type__media_advisory year__2023 topic__housing",
+            "tags": "type__media_advisory year__2023 type__auditor_general_reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2023",
-            "date": "2023-10-01",
-            "type": "Media Advisory"
+            "date": "October 1, 2023",
+            "type": "AG Reports"
         }
     ]
 }
