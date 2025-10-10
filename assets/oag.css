@@ -40,8 +40,10 @@
 	--oag-default-border-color: #908F84;
 	
 	/* Report type label colors */
-	--oag-light-green: #6d8b62;
-	--oag-turquoise: #26615f;
+	--oag-light-green: #89AF7C;
+	--oag-petrol-green: #26615F;
+	--oag-brick-red: #852828;
+	--oag-golden-sand: #E9C267;
 }
 
 /* Wrapper class added to facilitate overriding the GCWeb style and avoid race condition conflict*/
@@ -353,7 +355,7 @@
 		}
 
 		&.label-primary, &[data-report-type='AG'] {
-			background: var(--oag-primary-color);
+			background: var(--oag-brick-red);
 			color: #fff;
 		}
 
@@ -363,7 +365,12 @@
 		}
 
 		&[data-report-type='NLA'] {
-			background: var(--oag-turquoise);
+			background: var(--oag-petrol-green);
+			color: #fff;
+		}
+
+		&[data-report-type='CC'] {
+			background: var(--oag-golden-sand);
 			color: #fff;
 		}
 
@@ -655,6 +662,18 @@
 
 	.oag-shadow {
 		box-shadow: var(--oag-shadow);
+	}
+
+	.row.gutter-35  {
+		/* Add gutter spacing for rows */
+		margin-left: -17.5px;
+		margin-right: -17.5px;
+
+		& > [class*="col-"] {		
+			margin-bottom: 10px;
+			padding-left: 17.5px;
+			padding-right: 17.5px;	
+		}
 	}
 
 	/**********

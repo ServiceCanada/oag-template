@@ -104,20 +104,20 @@ layout: default
 						<span class="text-muted"><span data-nbitem></span> Results</span>
 					</p>
 				</div>
-				<div class="row wb-eqht-grd hght-inhrt reports-list wb-tagfilter-items" data-wb-json='{
+				<div class="row gutter-35 wb-eqht-grd hght-inhrt reports-list wb-tagfilter-items" data-wb-json='{
 						"url": "reports_en.json#/events",
 						"mapping": [
 							
 							{ "selector": ".listing-card", "attr": "data-wb-tags", "value": "/tags" },
 							{ "selector": ".label", "attr": "data-report-type", "value": "/type" },
-							{ "selector": ".report-type", "value": "/type" },
+							{ "selector": ".report-type", "value": "/type" },							
 							{ "selector": "h3 a", "value": "/title" }
 						]
 					}'>
 					<template>
 						<div class="col-xs-12 col-md-6 listing-card" data-wb-tags="">
 							<article class="oag-card oag-heading-as-body bg-light h-100">
-								<img src="https://dummyimage.com/300x300" alt="">
+								<img src="https://dummyimage.com/300x300" alt="oag-card-image">
 								<div>
 									<span class="label label-default" data-report-type=""><span class="report-type"></span> Reports</span>
 								</div>
