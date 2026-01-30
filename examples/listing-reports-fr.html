@@ -1,7 +1,7 @@
 ---
 title: "Rapports d'audit"
 altLangPage: "listing-reports.html"
-dateModified: "2025-08-15"
+dateModified: "2026-01-30"
 description: "Bureau du Vérificateur général du Canada - Rapports d'audit"
 language: "fr"
 pageclass: "oag-theme"
@@ -22,54 +22,114 @@ layout: default
 		<div id="searchFilter">
 			<div class="col-xs-12 col-md-4 col-lg-3">
 				<details open class="oag-filter-options provisional wb-details-close mb-4" data-breakpoint="sm">
-					<summary><h2>Filtres</h2></summary>
+					<summary><h2>Filtrer les résultats</h2></summary>
 					<div class="form-group">
-						<label for="customSearchUI">Rechercher dans le titre du rapport</label>
+						<label for="customSearchUI">Rechercher un titre de rapport</label>
 						<input type="search" class="form-control full-width" id="customSearchUI" data-wbfltrid="filteredReportsList" aria-controls="filteredReportsList" placeholder="Rechercher...">
 					</div>
+
 					<!-- Type of reports -->
 					<div class="form-group mb-0">
-						<fieldset>
+						<fieldset data-wb-urlmapping='{
+							"rt=ag": {
+								"action": "selectInput",
+								"value": "auditor-general-reports"
+							},
+							"rt=cfa": {
+								"action": "selectInput",
+								"value": "commentaries-on-financial-audits"
+							},
+							"rt=cesd": {
+								"action": "selectInput",
+								"value": "commissioner-of-the-environment-and-sustainable-development-reports"
+							},
+							"rt=nla": {
+								"action": "selectInput",
+								"value": "northern-legislative-assemblies-reports"
+							},
+							"rt=se": {
+								"action": "selectInput",
+								"value": "special-examinations"
+							},
+							"rt=op": {
+								"action": "selectInput",
+								"value": "other-products"
+							}
+						}'>
 							<legend>Type de rapport</legend>
 							<ul class="list-unstyled mb-0">
 								<li class="checkbox">
 									<label>
-										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__ag_reports"> Rapports du Vérificateur général
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="auditor-general-reports"> Rapports du vérificateur général
 									</label>
 								</li>
 								<li class="checkbox">
 									<label>
-										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__cesd_reports"> Rapports du commissaire à l'environnement et au développement durable
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="commentaries-on-financial-audits"> Commentaires sur les audits financiers
 									</label>
 								</li>
 								<li class="checkbox">
 									<label>
-										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__nla_reports"> Rapports des assemblées législatives du Nord
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="commissioner-of-the-environment-and-sustainable-development-reports"> Rapports du commissaire à l’environnement et au développement durable
 									</label>
 								</li>
 								<li class="checkbox">
 									<label>
-										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__cc_reports"> Rapports d’examen spécial des sociétés d’État
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="northern-legislative-assemblies-reports"> Rapports des assemblées législatives du Nord
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="special-examinations"> Examens spéciaux
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="other-products"> Autres produits
 									</label>
 								</li>
 							</ul>
 						</fieldset>
 					</div>
+
 					<hr>
+
 					<!-- Topic -->
 					<div class="form-group mb-0">
-						<label for="topicList">Sujets</label>
+						<label for="topicList">Sujet</label>
 						<select id="topicList" name="topic" class="form-control full-width wb-tagfilter-ctrl">
 							<option value="">Tous</option>
 							<option value="topic__housing">Logement</option>
-							<option value="topic__human_rights">Droits de l'homme</option>
+							<option value="topic__human_rights">Droits de la personne</option>
 							<option value="topic__income_security">Sécurité du revenu</option>
-							<option value="topic__information_management">Gestion de l'information</option>
+							<option value="topic__information_management">Gestion de l’information</option>
 						</select>
 					</div>
+
 					<div class="form-group mb-0 mt-3">
-						<label for="releaseYear">Année de sortie</label>
-						<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl">
+						<label for="releaseYear">Année de publication</label>
+						<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl" data-wb-urlmapping='{
+							"y=2025": {
+								"action": "selectInput",
+								"value": "year__2025"
+							},
+							"y=2024": {
+								"action": "selectInput",
+								"value": "year__2024"
+							},
+							"y=2023": {
+								"action": "selectInput",
+								"value": "year__2023"
+							},
+							"y=2022": {
+								"action": "selectInput",
+								"value": "year__2022"
+							},
+							"y=2021": {
+								"action": "selectInput",
+								"value": "year__2021"
+							}
+						}'>
 							<option value="">Toutes</option>
 							<option value="year__2025">2025</option>
 							<option value="year__2024">2024</option>
@@ -78,6 +138,7 @@ layout: default
 							<option value="year__2021">2021</option>
 						</select>
 					</div>
+
 					<div class="form-group mb-0 mt-3">
 						<label for="federalOrganization">Institution fédérale</label>
 						<select id="federalOrganization" name="federalOrganization" class="form-control full-width wb-tagfilter-ctrl">
@@ -90,6 +151,7 @@ layout: default
 						</select>
 					</div>
 				</details>
+
 				<div class="bg-light p-3 mt-3 small">
 					<h2 class="mt-0 h6">Rapports plus anciens</h2>
 					<p>Pour consulter les rapports publiés il y a plus de 5 ans, veuillez consulter le <a href="https://canada.ca">site des publications du gouvernement du Canada</a>.</p>
@@ -98,38 +160,39 @@ layout: default
 
 			<!-- Reports listing -->
 			<div class="col-xs-12 col-md-8 col-lg-9">
-				<h2 class="wb-inv">Liste de rapports d'audit</h2>
+				<h2 class="wb-inv">Liste des rapports d’audit</h2>
 				<div class="d-flex">
 					<p class="wb-fltr-info ml-auto">
 						<span class="text-muted"><span data-nbitem></span> résultats</span>
 					</p>
 				</div>
+
 				<div class="row wb-eqht-grd hght-inhrt reports-list wb-tagfilter-items" data-wb-json='{
 						"url": "reports_fr.json#/events",
 						"mapping": [
-							
 							{ "selector": ".listing-card", "attr": "data-wb-tags", "value": "/tags" },
-							{ "selector": ".label", "attr": "data-report-type", "value": "/type" },
-							{ "selector": ".report-type", "value": "/type" },
+							{ "selector": ".label", "attr": "data-report-type", "value": "/tag_key" },
+							{ "selector": ".label", "value": "/tag_title" },
 							{ "selector": "h3 a", "value": "/title" }
 						]
 					}'>
 					<template>
 						<div class="col-xs-12 col-md-6 listing-card" data-wb-tags="">
 							<article class="oag-card oag-heading-as-body bg-light h-100 mb-4">
-								<img src="https://dummyimage.com/300x300" alt="">
+								<img src="https://dummyimage.com/300x300" alt="oag-card-image">
 								<div>
-									<span class="label label-default" data-report-type="">Rapport du <span class="report-type"></span></span>
+									<span class="label label-default" data-report-type=""></span>
 								</div>
 								<h3 class="mb-0 mt-2"><a href="audit-report-fr.html" class="stretched-link mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</a></h3>
 							</article>
 						</div>
 					</template>
-					
 				</div>
+
 				<div class="wb-tagfilter-noresult">
 					<p>Aucun rapport ne correspond à cette combinaison de filtres.</p>
-				</div>			
+				</div>
+
 				<div id="filteredReportsListPagination"></div>
 			</div>
 		</div>
