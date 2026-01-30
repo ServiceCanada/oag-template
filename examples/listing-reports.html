@@ -1,7 +1,7 @@
 ---
 title: "Audit Reports"
 altLangPage: "listing-reports-fr.html"
-dateModified: "2025-08-15"
+dateModified: "2026-01-30"
 description: "Office of the Auditor General of Canada - Audit Reports"
 language: "en"
 pageclass: "oag-theme"
@@ -34,6 +34,10 @@ layout: default
 								"action": "selectInput",
 								"value": "auditor-general-reports"
 								},
+							"rt=cfa": {
+								"action": "selectInput",
+								"value": "commentaries-on-financial-audits"
+							},
 							"rt=cesd": {
 								"action": "selectInput",
 								"value": "commissioner-of-the-environment-and-sustainable-development-reports"
@@ -42,9 +46,13 @@ layout: default
 								"action": "selectInput",
 								"value": "northern-legislative-assemblies-reports"
 							},
-							"rt=secc": {
+							"rt=se": {
 								"action": "selectInput",
-								"value": "special-examinations-of-crown-corporations"
+								"value": "special-examinations"
+							},
+							"rt=op": {
+								"action": "selectInput",
+								"value": "other-products"
 							}
 						}'>
 							<legend>Type of Report</legend>
@@ -52,6 +60,11 @@ layout: default
 								<li class="checkbox">
 									<label>
 										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="auditor-general-reports"> Auditor General Reports
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="commentaries-on-financial-audits"> Commentaries on Financial Audits
 									</label>
 								</li>
 								<li class="checkbox">
@@ -66,10 +79,15 @@ layout: default
 								</li>
 								<li class="checkbox">
 									<label>
-										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="special-examinations-of-crown-corporations"> Special Examinations of Crown Corporations
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="special-examinations"> Special Examinations
+									</label>
+								</li>	
+								<li class="checkbox">
+									<label>
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="other-products"> Other Products
 									</label>
 								</li>
-							</ul>							
+							</ul>
 						</fieldset>
 					</div>
 					<hr>

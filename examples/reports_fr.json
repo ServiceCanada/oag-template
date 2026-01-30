@@ -1,82 +1,102 @@
 {
     "events": [
         {
-            "tags": "type__ag_reports year__2025 topic__housing institution-1",
+            "tags": "auditor-general-reports year__2025 topic__housing institution-1",
             "title": "Logement pour les Forces armées canadiennes",
             "year": "2025",
-            "type": "AG"
+            "tag_title": "Rapports du vérificateur général",
+            "tag_key": "auditor-general-reports"
         },
         {
-            "tags": "type__cesd_reports year__2025 topic__income_security",
-            "title": "Leçons tirées du bilan du Canada en matière de développement durable institution-1",
+            "tags": "commissioner-of-the-environment-and-sustainable-development-reports year__2025 topic__income_security institution-1",
             "year": "2025",
-            "type": "CEDD"
+            "tag_key": "commissioner-of-the-environment-and-sustainable-development-reports",
+            "tag_title": "Rapports du commissaire à l’environnement et au développement durable",
+            "title": "Leçons tirées du bilan du Canada en matière de développement durable"
         },
         {
-            "tags": "type__nla_reports year__2024 topic__income_security institution-2",
-            "title": "Services à l'enfance et à la famille",
-            "year": "2024",
-            "type": "NLA"
-        },
-        {
-            "tags": "type__nla_reports year__2023 topic__income_security institution-2",
-            "title": "Services à l'enfance et à la famille",
-            "year": "2023",
-            "type": "NLA"
-        },
-        {
-            "tags": "type__nla_reports year__2023 topic__income_security institution-3",
-            "title": "Services à l'enfance et à la famille",
-            "year": "2023",
-            "type": "NLA"
-        },
-        {
-            "tags": "type__cesd_reports year__2025 topic__income_security institution-3",
-            "title": "Leçons tirées du bilan du Canada en matière de développement durable",
-            "year": "2024",
-            "type": "CEDD"
-        },
-        {
-            "tags": "type__cesd_reports year__2025 topic__information_management institution-4",
+            "tags": "commissioner-of-the-environment-and-sustainable-development-reports year__2025 topic__income_security institution-3",
             "title": "Leçons tirées du bilan du Canada en matière de développement durable",
             "year": "2025",
-            "type": "CEDD"
+            "tag_title": "Rapports du commissaire à l’environnement et au développement durable",
+            "tag_key": "commissioner-of-the-environment-and-sustainable-development-reports"
         },
         {
-            "tags": "type__cesd_reports year__2025 topic__information_management institution-4",
-            "title": "Leçons tirées du bilan du Canada en matière de développement durable Bilan du Canada en matière de développement durable",
+            "tags": "commissioner-of-the-environment-and-sustainable-development-reports year__2025 topic__information_management institution-4",
+            "title": "Leçons tirées du bilan du Canada en matière de développement durable",
             "year": "2025",
-            "type": "CEDD"
+            "tag_title": "Rapports du commissaire à l’environnement et au développement durable",
+            "tag_key": "commissioner-of-the-environment-and-sustainable-development-reports"
         },
         {
-            "tags": "type__ag_reports year__2022 topic__housing institution-5",
+            "tags": "commissioner-of-the-environment-and-sustainable-development-reports year__2025 topic__information_management institution-4",
+            "title": "Leçons tirées du bilan du Canada en matière de développement durable",
+            "year": "2025",
+            "tag_title": "Rapports du commissaire à l’environnement et au développement durable",
+            "tag_key": "commissioner-of-the-environment-and-sustainable-development-reports"
+        },
+        {
+            "tags": "northern-legislative-assemblies-reports year__2024 topic__income_security institution-2",
+            "title": "Services à l’enfance et à la famille",
+            "year": "2024",
+            "tag_title": "Rapports des assemblées législatives du Nord",
+            "tag_key": "northern-legislative-assemblies-reports"
+        },
+        {
+            "tags": "northern-legislative-assemblies-reports year__2023 topic__income_security institution-2",
+            "title": "Services à l’enfance et à la famille",
+            "year": "2023",
+            "tag_title": "Rapports des assemblées législatives du Nord",
+            "tag_key": "northern-legislative-assemblies-reports"
+        },
+        {
+            "tags": "northern-legislative-assemblies-reports year__2023 topic__income_security institution-3",
+            "title": "Services à l’enfance et à la famille",
+            "year": "2023",
+            "tag_title": "Rapports des assemblées législatives du Nord",
+            "tag_key": "northern-legislative-assemblies-reports"
+        },
+        {
+            "tags": "auditor-general-reports year__2022 topic__housing institution-5",
             "title": "Logement pour les Forces armées canadiennes",
             "year": "2022",
-            "type": "AG"
+            "tag_title": "Rapports du vérificateur général",
+            "tag_key": "auditor-general-reports"
         },
         {
-            "tags": "type__ag_reports year__2021 topic__housing institution-5",
+            "tags": "auditor-general-reports year__2021 topic__housing institution-5",
             "title": "Logement pour les Forces armées canadiennes",
             "year": "2021",
-            "type": "AG"
+            "tag_title": "Rapports du vérificateur général",
+            "tag_key": "auditor-general-reports"
         },
         {
-            "tags": "type__ag_reports year__2020 topic__housing institution-1",
+            "tags": "commentaries-on-financial-audits year__2020 topic__housing institution-1",
             "title": "Logement pour les Forces armées canadiennes",
             "year": "2020",
-            "type": "AG"
+            "tag_title": "Commentaires sur les audits financiers",
+            "tag_key": "commentaries-on-financial-audits"
         },
         {
-            "tags": "type__ag_reports year__2022 topic__housing institution-2",
-            "title": "Logements pour les Forces armées canadiennes",
+            "tags": "commentaries-on-financial-audits year__2022 topic__housing institution-2",
+            "title": "Logement pour les Forces armées canadiennes",
             "year": "2022",
-            "type": "AG"
+            "tag_title": "Commentaires sur les audits financiers",
+            "tag_key": "commentaries-on-financial-audits"
         },
         {
-            "tags": "type__ag_reports year__2023 topic__housing institution-3",
-            "title": "Logements pour les Forces armées canadiennes",
+            "tags": "special-examinations year__2023 topic__housing institution-3",
+            "title": "Logement pour les Forces armées canadiennes",
             "year": "2023",
-            "type": "AG"
+            "tag_title": "Examens spéciaux",
+            "tag_key": "special-examinations"
+        },
+        {
+            "tags": "other-products year__2022 topic__housing institution-3",
+            "title": "Logement pour les Forces armées canadiennes",
+            "year": "2022",
+            "tag_title": "Autres produits",
+            "tag_key": "other-products"
         }
     ]
 }
