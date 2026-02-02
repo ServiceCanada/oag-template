@@ -350,12 +350,14 @@
 			color: #fff;
 		}
 
-		&[data-report-type='northern-legislative-assembly-reports'] {
+		&[data-report-type='northern-legislative-assemblies-reports'] {
 			background: var(--oag-petrol-green);
 			color: #fff;
 		}
 
-		&[data-report-type='special-examinations-of-crown-corporations'] {
+		&[data-report-type='commentaries-on-financial-audits'], 
+		&[data-report-type='special-examinations'], 
+		&[data-report-type='other-products'] {
 			background: var(--oag-golden-sand);
 			color: #333;
 		}

@@ -15,25 +15,25 @@
             "tag_key": "commissioner-of-the-environment-and-sustainable-development-reports"
         },
         {
-            "tags": "northern-legislative-assembly-reports year__2024 topic__income_security institution-2",
+            "tags": "northern-legislative-assemblies-reports year__2024 topic__income_security institution-2",
             "title": "Child and Family Services",
             "year":"2024",
             "tag_title": "Northern Legislative Assemblies Reports",
-            "tag_key": "northern-legislative-assembly-reports"
+            "tag_key": "northern-legislative-assemblies-reports"
         },
         {
-            "tags": "northern-legislative-assembly-reports year__2023 topic__income_security institution-2",
+            "tags": "northern-legislative-assemblies-reports year__2023 topic__income_security institution-2",
             "title": "Child and Family Services",
             "year":"2023",
             "tag_title": "Northern Legislative Assemblies Reports",
-            "tag_key": "northern-legislative-assembly-reports"
+            "tag_key": "northern-legislative-assemblies-reports"
         },
         {
-            "tags": "northern-legislative-assembly-reports year__2023 topic__income_security institution-3",
+            "tags": "northern-legislative-assemblies-reports year__2023 topic__income_security institution-3",
             "title": "Child and Family Services",
             "year":"2023",
             "tag_title": "Northern Legislative Assemblies Reports",
-            "tag_key": "northern-legislative-assembly-reports"
+            "tag_key": "northern-legislative-assemblies-reports"
         },
         {
             "tags": "commissioner-of-the-environment-and-sustainable-development-reports year__2025 topic__income_security institution-3",
@@ -71,25 +71,32 @@
             "tag_key": "auditor-general-reports"
         },
         {
-            "tags": "special-examinations-of-crown-corporations year__2020 topic__housing institution-1",
+            "tags": "commentaries-on-financial-audits year__2020 topic__housing institution-1",
             "title": "Housing for Canadian Armed Forces",
             "year":"2020",
-            "tag_title": "Special Examinations of Crown Corporations",
-            "tag_key": "special-examinations-of-crown-corporations"
+            "tag_title": "Commentaries on financial audits",
+            "tag_key": "commentaries-on-financial-audits"
         },
         {
-            "tags": "special-examinations-of-crown-corporations year__2022 topic__housing institution-2",
+            "tags": "commentaries-on-financial-audits year__2022 topic__housing institution-2",
             "title": "Housing for Canadian Armed Forces",
             "year":"2022",
-            "tag_title": "Special Examinations of Crown Corporations",
-            "tag_key": "special-examinations-of-crown-corporations"
+            "tag_title": "Commentaries on financial audits",
+            "tag_key": "commentaries-on-financial-audits"
         },
         {
-            "tags": "special-examinations-of-crown-corporations year__2023 topic__housing institution-3",
+            "tags": "special-examinations year__2023 topic__housing institution-3",
             "title": "Housing for Canadian Armed Forces",
             "year":"2023",
-            "tag_title": "Special Examinations of Crown Corporations",
-            "tag_key": "special-examinations-of-crown-corporations"
+            "tag_title": "Special Examinations",
+            "tag_key": "special-examinations"
+        },
+         {
+            "tags": "other-products year__2023 topic__housing institution-3",
+            "title": "Housing for Canadian Armed Forces",
+            "year":"2022",
+            "tag_title": "Other Products",
+            "tag_key": "other-products"
         }
     ]
 }
