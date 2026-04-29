@@ -9,7 +9,7 @@ layout: default
 ---
 
 <section class="alert alert-info">
-	<h2 class="oag-timber-wolf" class="h5">Note</h2>
+	<h2 class="oag-dark" class="h5">Note</h2>
 	<p>This page showcases examples of CSS classes, components, and other elements from GCWeb that have been customized or overwritten for this project. These modifications were made to better align with the specific requirements and design goals of the project.</p>
 </section>
 <p>For a complete list of features, please visit the <a href="https://wet-boew.github.io/GCWeb/index-en.html">GCWeb website</a>. Refer to the documentation for detailed information on each change.</p>
@@ -17,7 +17,7 @@ layout: default
 
 <section class="panel panel-default mrgn-tp-lg">
 	<header class="panel-heading">
-		<h4 class="panel-title">On this page</h4>
+		<h2 class="panel-title h4">On this page</h2>
 	</header>
 	<div class="panel-body">
 		<ul>
@@ -30,9 +30,9 @@ layout: default
 			<li><a href="#buttons">Buttons</a></li>
 			<li><a href="#alerts">Notices (was alerts)</a></li>
 			<li><a href="#labels">Labels</a> <span class="label label-warning small">Updated</span></li>
-			<li><a href="#tabbed-interface">Tabbed interface - vertical variant</a></li>
+			<li><a href="#tabbed-interface">Tabbed interface-vertical variant</a></li>
 			<li><a href="#cards">Cards</a></li>
-			<li><a href="#pagination">Pagination</a> <span class="label label-warning small">Updated</span></li>
+			<li><a href="#pagination">Pagination</a></li>
 			<li><a href="#download">Download link</a></li>
 			<li><a href="#existing-utilities">Existing utilities</a></li>
 			<li><a href="#oag-utilities">OAG specific utilities</a></li>
@@ -41,7 +41,7 @@ layout: default
 </section>
 
 
-<h2 class="oag-timber-wolf" id="scaffolding">Scaffolding</h2>
+<h2 class="oag-dark" id="scaffolding">Scaffolding</h2>
 <section>
 <h1>Heading&nbsp;1&nbsp;| 33pt = 44px—Trillium (Dark Shade)</h1>
 <h2>Heading&nbsp;2&nbsp;| 27pt = 36px—Trillium (Base Color)</h2>
@@ -53,13 +53,22 @@ layout: default
 </section>
 
 <!-- OAG <hr> DIVIDER -->
-<h3>&lt;hr&gt; divider</h3>
-<hr class="mt-0">
+<h3 class="mb-0">&lt;hr&gt; divider</h3>
+<p class="mt-0">oag-hr</p>
+<hr class="oag-hr mt-0">
 
 <!-- OAG LEAD -->
-<h3>Lead</h3>
-<p class="lead">Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<h3 class="mb-0">Lead 1</h3>
+<p class="my-0">oag-lead-01</p>
+<p class="oag-lead-01">Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
+<h3 class="mb-0">Lead 2</h3>
+<p class="my-0">oag-lead-02</p>
+<div class="row">
+    <div class="col-md-10">
+        <p class="oag-lead-02 oag-prime">Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</div>
 
 <h3>Blockquote</h3>
 <figure>
@@ -96,72 +105,70 @@ layout: default
 </details>
 
 
-<h2 class="oag-timber-wolf" id="colors">Colors</h2>
+<h2 class="oag-dark" id="colors">Colors</h2>
 <!-- OAG COLOR ADJUSTMENTS -->
-<h3>Color classes</h2>
+<h3 class="mt-4 mb-0">Color classes</h2>
 <p>Tested for AA contrast using large text (shown here using heading 4).</p>
 <div class="row">
     <div class="col-md-4">
-        <h4 class="oag-purple-trillium">Purple Trillium</h4>
-		<h4 class="oag-fallen-leaves">Fallen Leaves</h4>
-		<h4 class="oag-lakeside-daisy bg-dark p-1">Lakeside Daisy</h4>
-		<h4 class="oag-lakeside-daisy-darker">Lakeside Daisy (darker shade)</h4>
-		<h4 class="oag-arctic-water">Arctic Water</h4>
+        <h4 class="oag-prime mb-0 py-1"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Purple Trillium</h4><p class="mt-0">oag-prime</p>
+		<h4 class="oag-report-01 py-1 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Fallen Leaves</h4><p class="mt-0">oag-report-01</p>
+		<h4 class="oag-report-02 py-1 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Lakeside Daisy</h4><p class="mt-0">oag-report-02</p>
+		<h4 class="oag-report-03 py-1 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Arctic Water</h4><p class="mt-0">oag-report-03</p>
+		<h4 class="oag-report-04 py-1 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Lichen</h4><p class="mt-0">oag-report-04</p>
     </div>
     <div class="col-md-4">
-        <h4 class="oag-lichen bg-dark p-1">Lichen</h4>
-		<h4 class="oag-lichen-darker">Lichen (darker shade)</h4>
-		<h4 class="oag-mountain-lion bg-dark p-1">Mountain Lion</h4>
-		<h4 class="oag-canadian-rockies">Canadian Rockies</h4>
-		<h4 class="oag-timber-wolf">Timber Wolf</h4>
+		<h4 class="oag-neutral-01 bg-oag-dark px-2 py-1 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span>  Mountain Lion</h4><p class="mt-0">oag-neutral-01</p>
+		<h4 class="oag-neutral-02 py-1 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Canadian Rockies</h4><p class="mt-0">oag-neutral-02</p>
+		<h4 class="oag-neutral-03 py-1 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Timber Wolf</h4><p class="mt-0">oag-neutral-03 <strong>also</strong> oag-dark</p>
+		<h4 class="oag-neutral-04 bg-oag-dark px-2 py-1 mb-0 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Aged Parchment</h4><p class="mt-0">oag-neutral-04</p>
+		<h4 class="oag-neutral-04s bg-oag-dark px-2 py-1 mb-0 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Aged Parchment (shade)</h4><p class="mt-0">oag-neutral-04s</p>
     </div>
     <div class="col-md-4">
-		<h4 class="oag-barn-swallow bg-dark p-1">Barn Swallow</h4>
-		<h4 class="oag-barn-swallow-darker">Barn Swallow (darker shade)</h4>
-		<h4 class="oag-monarch-butterfly">Monarch Butterfly</h4>
-		<h4 class="oag-aged-parchment bg-dark p-1">Aged Parchment</h4>
+		<h4 class="oag-accent-01 bg-oag-dark px-2 py-1 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Barn Swallow</h4><p class="mt-0">oag-accent-01</p>
+		<h4 class="oag-accent-02 py-1 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Monarch Butterfly</h4><p class="mt-0">oag-accent-02</p>
+		<h4 class="oag-footer py-1 mb-0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> OAG Footer</h4><p class="mt-0">oag-footer</p>
     </div>
 </div>
 
 <!-- OAG BG COLOR ADJUSTMENTS -->
-<h3 class="mt-4">Background color classes</h2>
+<h3 class="mt-4 mb-0">Background color classes</h2>
 <p>Tested for AA contrast using large text (shown here using heading 4).</p>
 <div class="row">
     <div class="col-md-4">
-        <h4 class="oag-bg-purple-trillium text-white p-1">Purple Trillium</h4>
-		<h4 class="oag-bg-fallen-leaves text-white p-1">Fallen Leaves</h4>
-		<h4 class="oag-bg-lakeside-daisy p-1">Lakeside Daisy</h4>
-		<h4 class="oag-bg-lakeside-daisy-darker text-white p-1">Lakeside Daisy (darker shade)</h4>
-		<h4 class="oag-bg-arctic-water text-white p-1">Arctic Water</h4>
+        <h4 class="bg-oag-prime text-white px-2 py-1 mb-0">Purple Trillium</h4><p class="mt-0">bg-oag-prime</p>
+		<h4 class="bg-oag-report-01 text-white px-2 py-1 mb-0">Fallen Leaves</h4><p class="mt-0">bg-oag-report-01</p>
+		<h4 class="bg-oag-report-02 text-white px-2 py-1 mb-0">Lakeside Daisy</h4><p class="mt-0">bg-oag-report-02</p>
+		<h4 class="bg-oag-report-03 text-white px-2 py-1 mb-0">Arctic Water</h4><p class="mt-0">bg-oag-report-03</p>
+        <h4 class="bg-oag-report-04 text-white px-2 py-1 mb-0">Lichen</h4><p class="mt-0">bg-oag-report-04</p>
     </div>
     <div class="col-md-4">
-        <h4 class="oag-bg-lichen p-1">Lichen</h4>
-		<h4 class="oag-bg-lichen-darker text-white p-1">Lichen (darker shade)</h4>
-		<h4 class="oag-bg-mountain-lion p-1">Mountain Lion</h4>
-		<h4 class="oag-bg-canadian-rockies text-white p-1">Canadian Rockies</h4>
-		<h4 class="oag-bg-timber-wolf text-white p-1">Timber Wolf</h4>
+		<h4 class="bg-oag-neutral-01 px-2 py-1 mb-0">Mountain Lion</h4><p class="mt-0">bg-oag-neutral-01</p>
+		<h4 class="bg-oag-neutral-02 text-white px-2 py-1 mb-0">Canadian Rockies</h4><p class="mt-0">bg-oag-neutral-02</p>
+		<h4 class="bg-oag-neutral-03 text-white px-2 py-1 mb-0">Timber Wolf</h4><p class="mt-0">bg-oag-neutral-03 <strong>also</strong> bg-oag-dark</p>
+		<h4 class="bg-oag-neutral-04 px-2 py-1 mb-0">Aged Parchment</h4><p class="mt-0">bg-oag-neutral-04</p>
+		<h4 class="bg-oag-neutral-04s px-2 py-1 mb-0">Aged Parchment (shade)</h4><p class="mt-0">bg-oag-neutral-04s</p>
     </div>
     <div class="col-md-4">
-		<h4 class="oag-bg-barn-swallow p-1">Barn Swallow</h4>
-		<h4 class="oag-bg-barn-swallow-darker text-white p-1">Barn Swallow (darker shade)</h4>
-		<h4 class="oag-bg-monarch-butterfly text-white p-1">Monarch Butterfly</h4>
-		<h4 class="oag-bg-aged-parchment p-1">Aged Parchment</h4>		
+		<h4 class="bg-oag-accent-01 px-2 py-1 mb-0">Barn Swallow</h4><p class="mt-0">bg-oag-accent-01</p>
+		<h4 class="bg-oag-accent-02 text-white px-2 py-1 mb-0">Monarch Butterfly</h4><p class="mt-0">bg-oag-accent-02</p>
+		<h4 class="bg-oag-footer text-white px-2 py-1 mb-0">OAG Footer</h4><p class="mt-0">bg-oag-footer</p>
     </div>
 </div>
 
 
 <!-- OAG TABLE -->
-<h2 class="oag-timber-wolf" id="table">Table</h2>
+<h2 class="oag-dark" id="table">Table</h2>
 <table class="table table-bordered table-responsive mrgn-tp-lg">
-  <thead>
-   <tr>
-	 <th scope="col" class="col-md-1"></th>
-	 <th scope="col" class="col-md-2">Column1</th>
-	 <th scope="col" class="col-md-3">Column2</th>
-	 <th scope="col" class="col-md-3">Column3</th>
-	 <th scope="col" class="col-md-3">Column4</th>
-   </tr>
-		<tr class="oag-sub-thead">
+	<thead class="text-white bg-oag-prime">
+		<tr>
+			<th scope="col" class="col-md-1"></th>
+			<th scope="col" class="col-md-2">Column1</th>
+			<th scope="col" class="col-md-3">Column2</th>
+			<th scope="col" class="col-md-3">Column3</th>
+			<th scope="col" class="col-md-3">Column4</th>
+		</tr>
+		<tr class="oag-sub-thead oag-prime">
 			<td></td>
 			<td>SecondaryColumn1</td>
 			<td>SecondaryColumn2</td>
@@ -218,7 +225,7 @@ layout: default
 
 
 <!-- OAG ACCORDION/TOGGLE -->
-<h2 class="oag-timber-wolf" id="toggle">Accordion/Toggle</h2>
+<h2 class="oag-dark" id="toggle">Accordion/Toggle</h2>
 <div class="accordion">
 	<details class="acc-group mrgn-bttm-md">
 		<summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Toggle&nbsp;1</summary>
@@ -242,23 +249,23 @@ layout: default
 
 
 <!-- OAG WELL -->
-<h2 class="oag-timber-wolf" id="well">Well</h2>
+<h2 class="oag-dark" id="well">Well</h2>
 <div class="row wb-eqht">
 	<div class="col-md-4">
-		<div class="well mrgn-tp-lg">
+		<div class="well mrgn-tp-lg hght-inhrt">
 			<h4 class="mrgn-tp-0">Default Well&nbsp;1</h4>
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt.</p>
 		</div>
     </div>
 	<div class="col-md-4">
-		<div class="well mrgn-tp-lg">
+		<div class="well mrgn-tp-lg hght-inhrt">
 			<h4 class="mrgn-tp-0">Default Well&nbsp;2</h4>
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 		</div>
     </div>
 	<div class="col-md-4">
-		<div class="well mrgn-tp-lg">
+		<div class="well mrgn-tp-lg hght-inhrt">
 			<h4 class="mrgn-tp-0">Default Well&nbsp;3</h4>
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 		</div>
@@ -291,33 +298,61 @@ layout: default
 <div class="row" style="flex-flow: row wrap; display: flex;">
 	<div class="col-md-4">
 		<div class="well oag-well-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
-			<h4 class="mrgn-tp-0" style="color: #fff;">Primary Well&nbsp;1</h4>
+			<h4 class="mrgn-tp-0 text-white">Primary Well&nbsp;1</h4>
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt.</p>
 		</div>
     </div>
 	<div class="col-md-4">
 		<div class="well oag-well-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
-			<h4 class="mrgn-tp-0" style="color: #fff;">Primary Well&nbsp;2</h4>
+			<h4 class="mrgn-tp-0 text-white">Primary Well&nbsp;2</h4>
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 		</div>
     </div>
 	<div class="col-md-4">
 		<div class="well oag-well-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
-			<h4 class="mrgn-tp-0" style="color: #fff;">Primary Well&nbsp;3</h4>
+			<h4 class="mrgn-tp-0 text-white">Primary Well&nbsp;3</h4>
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 		</div>
     </div>
 </div>
 
 
-<!-- OAG PANEL -->
-<h2 class="oag-timber-wolf" id="panel">Panel</h2>
 <div class="row wb-eqht">
 	<div class="col-md-4">
-		<section class="panel panel-default mrgn-tp-lg">
+		<span class="bg-oag-report-01 text-white">
+			<section class="well oag-well-secondary mrgn-tp-lg eqht-trgt">
+				<h4 class="mrgn-tp-0 text-white">Secondary Well&nbsp;1</h4>
+					<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt.</p>
+			</section>
+		</span>
+    </div>
+	<div class="col-md-4">
+		<span class="text-white bg-oag-report-04">
+			<section class="well oag-well-secondary mrgn-tp-lg eqht-trgt">
+				<h4 class="mrgn-tp-0 text-white">Secondary Well&nbsp;2</h4>
+					<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</section>
+		</span>
+    </div>
+	<div class="col-md-4">
+		<span class="text-white bg-oag-report-03">
+			<section class="well oag-well-secondary mrgn-tp-lg eqht-trgt">
+				<h4 class="mrgn-tp-0 text-white">Secondary Well&nbsp;3</h4>
+					<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</section>
+		</span>
+    </div>
+</div>
+
+
+<!-- OAG PANEL -->
+<h2 class="oag-dark" id="panel">Panel</h2>
+<div class="row wb-eqht">
+	<div class="col-md-4">
+		<section class="panel panel-default hght-inhrt mrgn-tp-lg">
 		<header class="panel-heading">
-			<h4 class="panel-title">Default Panel&nbsp;1</h4>
+			<h2 class="panel-title h4">Default Panel&nbsp;1</h2>
 		</header>
 			<div class="panel-body">
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt.</p>
@@ -325,9 +360,9 @@ layout: default
 		</section>
     </div>
 	<div class="col-md-4">
-		<section class="panel panel-default mrgn-tp-lg">
+		<section class="panel panel-default hght-inhrt mrgn-tp-lg">
 		<header class="panel-heading">
-			<h4 class="panel-title">Default Panel&nbsp;2</h4>
+			<h2 class="panel-title h4">Default Panel&nbsp;2</h2>
 		</header>
 			<div class="panel-body">
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -335,9 +370,9 @@ layout: default
 		</section>
     </div>
 	<div class="col-md-4">
-		<section class="panel panel-default mrgn-tp-lg">
+		<section class="panel panel-default hght-inhrt mrgn-tp-lg">
 		<header class="panel-heading">
-			<h4 class="panel-title">Default Panel&nbsp;3</h4>
+			<h2 class="panel-title h4">Default Panel&nbsp;3</h2>
 		</header>
 			<div class="panel-body">
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -351,7 +386,7 @@ layout: default
 	<div class="col-md-4">
 		<section class="panel panel-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
 		<header class="panel-heading">
-			<h4 class="panel-title">Primary Panel&nbsp;1</h4>
+			<h2 class="panel-title h4 text-white">Primary Panel&nbsp;1</h2>
 		</header>
 			<div class="panel-body">
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt.</p>
@@ -361,7 +396,7 @@ layout: default
 	<div class="col-md-4">
 		<section class="panel panel-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
 		<header class="panel-heading">
-			<h4 class="panel-title">Primary Panel&nbsp;2</h4>
+			<h2 class="panel-title h4 text-white">Primary Panel&nbsp;2</h2>
 		</header>
 			<div class="panel-body">
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -371,7 +406,7 @@ layout: default
 	<div class="col-md-4">
 		<section class="panel panel-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
 		<header class="panel-heading">
-			<h4 class="panel-title">Primary Panel&nbsp;3</h4>
+			<h2 class="panel-title h4 text-white">Primary Panel&nbsp;3</h2>
 		</header>
 			<div class="panel-body">
 				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -392,7 +427,7 @@ layout: default
 
 
 
-<h2 class="oag-timber-wolf" id="buttons">Buttons</h2>
+<h2 class="oag-dark" id="buttons">Buttons</h2>
 <section>
 	<h3>Regular</h3>
 	<p><a href="#" class="btn btn-primary">Primary</a> <a href="#" class="btn btn-default">Default</a> <a href="#" class="btn btn-link">Link</a></p>
@@ -416,7 +451,7 @@ layout: default
 </details>
 
 
-<h2 class="oag-timber-wolf" id="alerts">Notices (was alerts)</h2>
+<h2 class="oag-dark" id="alerts">Notices (was alerts)</h2>
 <section class="alert alert-info">
 	<h3>Info alert</h3>
 	<p>Alert details.</p>
@@ -440,7 +475,7 @@ layout: default
 </details>
 
 
-<h2 class="oag-timber-wolf" id="labels">Labels</h2>
+<h2 class="oag-dark" id="labels">Labels</h2>
 <p><span class="label label-default">Default label</span></p>
 <p><span class="label label-primary">Primary label</span></p>
 <p><span class="label label-default" data-report-type="auditor-general-reports">Auditor general reports label</span></p>
@@ -458,27 +493,21 @@ layout: default
 </code></pre>
 </details>
 
-<h2 class="oag-timber-wolf" id="tabbed-interface">Tabbed interface - vertical variant</h2>
+<h2 class="oag-dark" id="tabbed-interface">Tabbed interface-vertical variant</h2>
 <p>With session storage to remember last tab viewed. </p>
 <div class="wb-tabs vertical">
 	<div class="tabpanels">
 		<details id="details-panel1">
 			<summary>Example 1</summary>
-			<p>
-				Lorem ipsum dolor sit amet consectetur <a href="#details-panel3">Example 3</a>. Consectetur corrupti ea tempore ex consequatur pariatur adipisci, distinctio expedita, facere officiis dolor, amet possimus dignissimos repudiandae rerum eligendi nisi maiores sequi temporibus accusamus porro itaque voluptate est? Dolorem, inventore, aut perferendis enim natus a vel vero, quae minima ex voluptatibus suscipit.
-			</p>
+			<p>Lorem ipsum dolor sit amet consectetur <a href="#details-panel3">Example 3</a>. Consectetur corrupti ea tempore ex consequatur pariatur adipisci, distinctio expedita, facere officiis dolor, amet possimus dignissimos repudiandae rerum eligendi nisi maiores sequi temporibus accusamus porro itaque voluptate est? Dolorem, inventore, aut perferendis enim natus a vel vero, quae minima ex voluptatibus suscipit.			</p>
 		</details>
 		<details id="details-panel2" open="open">
 			<summary>Example 2</summary>
-			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi odio autem obcaecati inventore expedita maxime quos. Perspiciatis quos est nulla, voluptate tenetur laborum dolorum omnis consequuntur laboriosam amet libero vitae adipisci accusamus ex veritatis. Nulla magnam debitis quisquam perspiciatis perferendis repellendus corporis ipsam! Perferendis molestiae nisi beatae fugiat voluptate voluptas.
-			</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi odio autem obcaecati inventore expedita maxime quos. Perspiciatis quos est nulla, voluptate tenetur laborum dolorum omnis consequuntur laboriosam amet libero vitae adipisci accusamus ex veritatis. Nulla magnam debitis quisquam perspiciatis perferendis repellendus corporis ipsam! Perferendis molestiae nisi beatae fugiat voluptate voluptas.			</p>
 		</details>
 		<details id="details-panel3">
 			<summary>Example 3</summary>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, officia maiores, illum nulla doloremque possimus ipsam minima soluta harum provident fugiat optio enim facilis beatae cumque esse magnam ea sunt ipsa fugit deleniti magni error, minus iusto. Nisi laborum optio assumenda saepe accusantium consequatur ipsa asperiores facilis vitae animi atque, illo non minima quos ipsum dolore eius illum quas voluptate dolor. Quasi quisquam, reiciendis omnis itaque incidunt expedita quod a maxime consectetur, rerum eos, placeat aliquid fugiat aliquam sequi. Eligendi obcaecati, minima tenetur non sunt architecto aliquam repellendus laudantium, sapiente placeat iste ad odit est voluptatibus? Velit voluptas optio alias veniam sequi nesciunt error nemo expedita architecto dolore. Enim veritatis soluta at labore voluptas, assumenda sunt laudantium architecto, aliquid ratione id mollitia iure incidunt quos illo? Maxime, illo. Iste, culpa porro sed at quos mollitia, sit omnis molestias voluptatibus facere consequatur saepe quod, nihil ratione. Officia debitis doloribus facilis itaque voluptates pariatur beatae iure enim nihil amet quod ipsam officiis modi dolore, asperiores laudantium sint? Odit repellendus molestias quas in facere assumenda dolore iusto, quisquam vero deserunt porro quibusdam commodi reiciendis excepturi cupiditate perferendis placeat sapiente, obcaecati fugit culpa autem. Perferendis laborum nemo odio ipsa minima error, dignissimos dolorum non!
-			</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, officia maiores, illum nulla doloremque possimus ipsam minima soluta harum provident fugiat optio enim facilis beatae cumque esse magnam ea sunt ipsa fugit deleniti magni error, minus iusto. Nisi laborum optio assumenda saepe accusantium consequatur ipsa asperiores facilis vitae animi atque, illo non minima quos ipsum dolore eius illum quas voluptate dolor. Quasi quisquam, reiciendis omnis itaque incidunt expedita quod a maxime consectetur, rerum eos, placeat aliquid fugiat aliquam sequi. Eligendi obcaecati, minima tenetur non sunt architecto aliquam repellendus laudantium, sapiente placeat iste ad odit est voluptatibus? Velit voluptas optio alias veniam sequi nesciunt error nemo expedita architecto dolore. Enim veritatis soluta at labore voluptas, assumenda sunt laudantium architecto, aliquid ratione id mollitia iure incidunt quos illo? Maxime, illo. Iste, culpa porro sed at quos mollitia, sit omnis molestias voluptatibus facere consequatur saepe quod, nihil ratione. Officia debitis doloribus facilis itaque voluptates pariatur beatae iure enim nihil amet quod ipsam officiis modi dolore, asperiores laudantium sint? Odit repellendus molestias quas in facere assumenda dolore iusto, quisquam vero deserunt porro quibusdam commodi reiciendis excepturi cupiditate perferendis placeat sapiente, obcaecati fugit culpa autem. Perferendis laborum nemo odio ipsa minima error, dignissimos dolorum non!			</p>
 		</details>
 	</div>
 </div>
@@ -502,7 +531,7 @@ layout: default
 &lt;/div></code></pre>
 </details>
 
-<h2 class="oag-timber-wolf" id="cards">Default card</h2>
+<h2 class="oag-dark" id="cards">Default card</h2>
 <article class="oag-card">
 	<h3 class="mb-3"><a href="#">Lorem ipsum dolor sit amet</a></h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi, ipsum sit adipisci expedita repellendus minus quidem maxime praesentium repellat.</p>
@@ -601,7 +630,7 @@ layout: default
 &lt;/article></code></pre>
 </details>
 
-<h2 class="oag-timber-wolf" id="pagination">Pagination</h2>
+<h2 class="oag-dark" id="pagination">Pagination</h2>
 <ul class="wb-paginate provisional">
 	<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, at!</li>
 	<li>Soluta maiores deserunt fugit dolorum ratione cum necessitatibus dolore ipsum?</li>
@@ -642,7 +671,7 @@ layout: default
 &lt;/ul></code></pre>
 </details>
 
-<h2 class="oag-timber-wolf" id="download">Download link</h2>
+<h2 class="oag-dark" id="download">Download link</h2>
 <h3>Default</h3>
 <a class="gc-dwnld" href="#" download>
 	<img src="https://dummyimage.com/200x200" alt="" />
@@ -680,7 +709,7 @@ layout: default
 &lt;/a></code></pre>
 </details>
 
-<h2 class="oag-timber-wolf" id="existing-utilities">Existing utilities</h2>
+<h2 class="oag-dark" id="existing-utilities">Existing utilities</h2>
 <h3><code>.lead</code></h3>
 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <p>Note: the lead class font-size will change depending of the view port: xsmall, small medium and large </p>
@@ -697,7 +726,7 @@ layout: default
 </details>
 
 <h3><code>.text-white</code></h3>
-<div class="bg-dark p-4">
+<div class="bg-oag-dark p-4">
 	<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 <details class="mt-3">
@@ -719,7 +748,7 @@ layout: default
 	<pre><code>&lt;div class="bg-light p-4">&lt;/div></code></pre>
 </details>
 
-<h2 class="oag-timber-wolf" id="oag-utilities">OAG specific utilities</h2>
+<h2 class="oag-dark" id="oag-utilities">OAG specific utilities</h2>
 <h3><code>.oag-rds</code></h3>
 <div class="bg-light oag-rds p-4">
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?</p>
