@@ -9,8 +9,8 @@
 	/* Primary color used throughout the theme */
 	--oag-primary-color: #4a0f30;
 
-	/* Color for body
-	--oag-body-color: #2b3036; */   /* This is not necessary, the default color #333 is fine */
+	/* Color for body */
+	--oag-body-color: #2b3036;
 
 	/* Color for links */
 	--oag-secondary-color: #852828;
@@ -45,7 +45,7 @@
 	--oag-light-green: #5e794e;
 	--oag-petrol-green: #005e59;
 	--oag-brick-red: #852828;
-	--oag-golden-sand: #e8c266;
+	--oag-golden-sand: #977E42;
 }
 
 /* Wrapper class added to facilitate overriding the GCWeb style and avoid race condition conflict*/
@@ -300,116 +300,129 @@
 			margin: 24px 0px 24px 0px;
 		}
 
-	/**********
-		Custom OAG colors classes
-	**********/ 
-		.oag-purple-trillium {
-			color: #4a0f30; }
+		.oag-lead-01 {
+			font-family: "Noto Sans", sans-serif; 
+			font-weight: 300;
+			font-size: 24px;
+			padding: 1em 0 2em;
+		}
 
-		.oag-bg-purple-trillium {
+		.oag-lead-02 {
+			font-family: "Noto Serif", serif;
+			font-weight: 300;
+			font-size: 52px;
+			padding: 1em 0 2em;
+		}
+
+		@media screen and (max-width: 768px) {
+		  .oag-lead-02 {
+			font-size: 36px;
+		  }
+		}
+
+	/**********
+		Custom OAG color classes (AA contrast using large text)
+	**********/ 
+		.oag-prime {
+			color: #4a0f30; } /* Purple Trillium */
+
+		.bg-oag-prime {
 			background-color: #4a0f30; }
 
-		.oag-fallen-leaves {
-			color: #852828; }
+		.oag-report-01 {
+			color: #852828; } /* Fallen Leaves */
 
-		.oag-bg-fallen-leaves {
+		.bg-oag-report-01 {
 			background-color: #852828; }
 
-		.oag-lakeside-daisy {
-			color: #e8c266; } /* Contrast with black */
+		.oag-report-02 {
+			color: #977E42; } /* Lakeside Daisy */
 
-		.oag-bg-lakeside-daisy {
-			background-color: #e8c266; }
+		.bg-oag-report-02 {
+			background-color: #977E42; }
 
-		.oag-lakeside-daisy-darker {
-			color: #a28847; } /* Contrast with white (Large text only) */
+		.oag-report-03 {
+			color: #005e59; } /* Arctic Water */
 
-		.oag-bg-lakeside-daisy-darker {
-			background-color: #a28847; }
-
-		.oag-arctic-water {
-			color: #005e59; }
-
-		.oag-bg-arctic-water {
+		.bg-oag-report-03 {
 			background-color: #005e59; }
 
-		.oag-lichen {
-			color: #87ad70; } /* Contrast with black */
+		.oag-report-04 {
+			color: #6c8a5a; } /* Lichen */
 
-		.oag-bg-lichen {
-			background-color: #87ad70; }
+		.bg-oag-report-04 {
+			background-color: #6c8a5a; }
 
-		.oag-lichen-darker {
-			color: #5e794e; } /* Contrast with white (Large text only) */
+		.oag-neutral-01 {
+			color: #ebd9ab; } /* Mountain Lion */
 
-		.oag-bg-lichen-darker {
-			background-color: #5e794e; }
-
-		.oag-mountain-lion {
-			color: #ebd9ab; } /* Contrast with black */
-
-		.oag-bg-mountain-lion {
+		.bg-oag-neutral-01 {
 			background-color: #ebd9ab; }
 
-		.oag-canadian-rockies {
-			color: #8f8f85; } /* Contrast with white (Large text only) */
+		.oag-neutral-02 {
+			color: #8f8f85; } /* Canadian Rockies */
 
-		.oag-bg-canadian-rockies {
+		.bg-oag-neutral-02 {
 			background-color: #8f8f85; }
 			
-		.oag-timber-wolf {
-			color: #2b3036; }
+		.oag-neutral-03, .oag-dark { 
+			color: #2b3036; } /* Timber Wolf */
 
-		.oag-bg-timber-wolf {
+		.bg-oag-neutral-03, .bg-oag-dark {
 			background-color: #2b3036; }
 
-		.oag-aged-parchment { /* Contrast with black */
-			color: #efefe6; }
+		.oag-neutral-04 {
+			color: #efefe6; } /* Aged Parchment 1 */
 
-		.oag-bg-aged-parchment {
+		.bg-oag-neutral-04 {
 			background-color: #efefe6; }
 
-		.oag-barn-swallow {
-			color: #f0a361; } /* Contrast with black */
+		.oag-neutral-04s {
+			color: #e1ddd0; } /* Aged Parchment 2 */
 
-		.oag-bg-barn-swallow {
+		.bg-oag-neutral-04s {
+			background-color: #e1ddd0; }
+
+		.oag-accent-01 {
+			color: #f0a361; } /* Barn Swallow */
+
+		.bg-oag-accent-01 {
 			background-color: #f0a361; }
 
-		.oag-barn-swallow-darker {
-			color: #a87244; } /* Contrast with white (Large text only) */
+		.oag-accent-02 {
+			color: #e86e52; } /* Monarch Butterfly */
 
-		.oag-bg-barn-swallow-darker {
-			background-color: #a87244; }
-
-		.oag-monarch-butterfly { /* Contrast with white (Large text only) */
-			color: #e86e52; }
-
-		.oag-bg-monarch-butterfly {
+		.bg-oag-accent-02 {
 			background-color: #e86e52; }
 
+		.oag-footer {
+			color: #4b4f54; } /* Footer (variant of Timber Worf) */
+
+		.bg-oag-footer {
+			background-color: #4b4f54; }
 
 
 	/**********
 		OAG Table
 	**********/
 		table, th, td {
-		  border: 1px solid #e1ddd0 !important; }
+		  border: 1px solid #efefe6 !important; }
 
 		thead {
-		  color: #fff;
-		  background-color: #4a0f30;
+		  color: inherit;
+		  background-color: inherit;
 		  font-size: 18px; }
 
 		th {
 		  font-weight: 600; }
 
 		.oag-sub-thead {
+		  color: #inherit;
 		  font-weight: 600;
-		  background-color: #e1ddd0;
-		  color: #4a0f30; }
+		  background-color: #efefe6; }
 
 		.oag-row-divider {
-		  border-top: 3px solid #4a0f30; }
+		  border-top: 3px solid #9c8e63; }
 
 		.table-striped > tbody > tr:nth-child(odd) > td,
 		.table-striped > tbody > tr:nth-child(odd) > th {
@@ -424,39 +437,47 @@
 		  padding: 16px;
 		  margin-bottom: 16px;
 		  background-color: #efefe6;
-		  border: 1px solid #e1ddd0;
+		  border: 1px solid #efefe6;
 		  border-radius: 0px;
 		  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.05);
 		  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.05); }
 
 		.oag-well-white {
 			background-color: #fff;
-			border: 1px solid #e1ddd0; }
-		 
+			border: 1px solid #efefe6;
+			padding: 16px; }
+
 		.oag-well-primary {
 			color: #fff;
 			background-color: #4a0f30;
-			border: 1px solid #4a0f30; }
+			border: none;
+			padding: 16px; }
 
+		.oag-well-secondary {
+			color: inherit;
+			background-color: inherit;
+			border: none;
+			padding: 16px; }
+		
 	/**********
 		OAG Panel
 	**********/
 
 		.panel-default {
 			border-radius: 0px;
-			border-color: #e1ddd0; }
+			border-color: #efefe6; }
 		
 			.panel-default > .panel-heading {
 				border-radius: 0px;
 				color: #6d6345;
 				background-color: #efefe6;
-				border-color: #e1ddd0; }
+				border-color: #efefe6; }
 
 			.panel-default > .panel-heading + .panel-collapse .panel-body {
-				border-top-color: #e1ddd0; }
+				border-top-color: #efefe6; }
 
 			.panel-default > .panel-footer + .panel-collapse .panel-body {
-				border-bottom-color: #e1ddd0; }
+				border-bottom-color: #efefe6; }
 
 		.panel-primary {
 			border-radius: 0px;
@@ -482,7 +503,7 @@
 		  padding: 8px 32px; }
 
 		.wb-toggle:hover {
-		  background-color: #e1ddd0; }
+		  background-color: #efefe6; }
 
 		.wb-toggle:focus {
 		  background-color: #efefe6; }
@@ -491,7 +512,7 @@
 		  border-left: none;
 		  border-top: none;
 		  border-right: none;
-		  border-bottom: 2px #e1ddd0 solid; }
+		  border-bottom: 2px #efefe6 solid; }
 
 	/**********
 		Buttons
@@ -532,13 +553,7 @@
 			}
 		}
 	}
-	
-	.input-group-btn .btn {
-		border: 1px solid var(--oag-primary-color);
-		border-top-right-radius: 4px;
-		border-bottom-right-radius: 4px;
-		font-size: initial;
-	}
+
 
 	/**********
 		Components
@@ -793,17 +808,6 @@
 		}
 	}	
 
-		.wb-paginate-pager .pagination > li > button {
-		  background-color: #eaebed;
-		  border: 1px solid #e1ddd0;
-		  color: #4a0f30;
-		}
-		.wb-paginate-pager .pagination > li > button:hover, .wb-paginate-pager .pagination > li > button:focus {
-		  background-color: #e1ddd0;
-		  border-color: #e1ddd0;
-		  z-index: 2;
-		}
-
 	a.gc-dwnld {
 		background-color: var(--oag-light-bg-color);
 		border: none;
@@ -951,8 +955,7 @@
 
 		.lead {
 			color: #fff;
-				font-family: Noto Sans;
-				font-weight: 300;
+			font-family: var(--oag-heading-font);
 			font-size: 3em;
 			padding: 1em 0 2em;
 		}
