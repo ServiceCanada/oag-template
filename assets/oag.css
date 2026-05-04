@@ -7,30 +7,30 @@
 	CSS Variables defining default OAG values 
 **********/
 :root {
-	/* Primary color used throughout the theme */
+	/* OAG Primary color used throughout the theme */
 	--oag-primary: #4a0f30;
 	--oag-primary-dark: #430e2b;
 	--oag-primary-darker: #380b24;
 
-	/* Report type label colors */
+	/* OAG Report type label colors */
 	--oag-report-01: #852828;
 	--oag-report-02: #977E42;
 	--oag-report-03: #005e59;
 	--oag-report-04: #6c8a5a;
 
-	/* Neutral colors */
+	/* OAG Neutral colors */
 	--oag-neutral-01: #ebd9ab;
 	--oag-neutral-02: #8f8f85;
 	--oag-neutral-03: #2b3036;
 	--oag-neutral-04: #efefe6;
 	--oag-neutral-04s: #e1ddd0;
 
-	/* Accent colors */
+	/* OAG Accent colors */
 	--oag-accent-01: #f0a361;
 	--oag-accent-02: #e86e52;
 
 	/* OAG footer bottom color */
-	--oag-footer-bottom: #4b4f54;
+	--oag-footer: #4b4f54;
 
 	/* Color for body */
 	--oag-body-color: #2b3036;
@@ -454,12 +454,12 @@
 		background-color: var(--oag-accent-02);
 	}
 
-	.oag-footer-bottom {
-		color: var(--oag-footer-bottom); /* Footer (variant of Timber Worf) */
+	.oag-footer {
+		color: var(--oag-footer); /* Footer (variant of Timber Worf) */
 	}
 
-	.bg-oag-footer-bottom {
-		background-color: var(--oag-footer-bottom);
+	.bg-oag-footer {
+		background-color: var(--oag-footer);
 	}
 
 
