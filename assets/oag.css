@@ -481,7 +481,7 @@
 	}
 
 	.oag-sub-thead {
-		color: #inherit;
+		color: inherit;
 		font-weight: 600;
 		background-color: var(--oag-light-bg-color);
 	}
