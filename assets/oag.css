@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
 /**********
 	CSS Variables defining default OAG values 
 **********/
@@ -335,13 +336,6 @@
 	}
 
 	.oag-lead-01 {
-		font-family: var(--oag-body-font);
-		font-weight: 300;
-		font-size: 24px;
-		padding: 1em 0 2em;
-	}
-
-	.oag-lead-02 {
 		font-family: var(--oag-heading-font);
 		font-weight: 300;
 		font-size: 52px;
@@ -349,7 +343,7 @@
 	}
 
 	@media screen and (max-width: 768px) {
-		.oag-lead-02 {
+		.oag-lead-01 {
 			font-size: 36px;
 		}
 	}
