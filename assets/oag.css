@@ -745,7 +745,7 @@
 					padding: 1em .25em;
 
 					&:hover {
-						background: var(--oag-default-label-bg-color);
+						background-color: var(--oag-default-label-bg-color);
 						border-color: var(--oag-primary);
 						color: var(--oag-primary);
 					}
