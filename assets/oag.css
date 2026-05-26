@@ -246,6 +246,33 @@
 		.gc-main-footer {
 			background-color: var(--oag-body-color);
 		}
+
+		.oag-footer-heading {
+        color: #fff;
+        margin-bottom: .5rem;
+        font-size: 22px; /* 16.5 */
+        line-height: 1.2;
+        font-weight: 700;
+	    }
+	
+	    .oag-footer-subheading {
+	        color: #fff;
+	        margin-bottom: .25rem;
+	    }
+	
+	    .oag-footer-section {
+	        margin-top: 1rem;
+	    }
+	
+	    .oag-footer-links {
+	        list-style: none;
+	        padding: 0;
+	        margin: 0;
+	    }
+	
+	    .oag-footer-links li {
+	        margin-bottom: .5rem;
+	    }
 	}
 
 
