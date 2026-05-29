@@ -243,9 +243,36 @@
 		Footer
 	**********/ 
 	#wb-info {
-		.gc-main-footer {
-			background-color: var(--oag-body-color);
+	    .gc-main-footer {
+	        background-color: var(--oag-body-color);
+	    }
+	
+	    .oag-footer-heading { /* footer h4 */
+	        color: #fff;
+	        margin-bottom: .5rem;
+	        font-size: 22px; /* 16.5 */
+	        line-height: 1.2;
+	        font-weight: 700;
+	    }
+		
+		.oag-footer-heading::before {
+	    	display: none;
+			content: none;
 		}
+	
+	    .oag-footer-section {
+	        margin-top: 1rem;
+	    }
+	
+	    .oag-footer-links {
+	        list-style: none;
+	        padding: 0;
+	        margin: 0;
+	    }
+	
+	    .oag-footer-links li {
+	        margin-bottom: .5rem;
+	    }
 	}
 
 
