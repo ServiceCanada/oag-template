@@ -22,36 +22,172 @@
 <footer id="wb-info">
 	<h2 class="wb-inv">{{ i18nText-footerSite }}</h2>	
 	<div class="gc-main-footer">
-		<div class="container">
-			<div class="row wb-eqht">
-				<div class="col-xs-12 col-sm-7 col-md-8 hght-inhrt">
-					<nav>
-						<h3 class="wb-inv">{{ i18nText-soag-header }}</h3>
-						<ul class="colcount-sm-2 colcount-md-3 list-unstyled">
-							{%- if page.language == "fr" -%}
-							<li><a href="#">Contactez-nous</a></li>
-							<li><a href="#">Opportunités actuelles</a></li>
-							<li><a href="#">Transparence</a></li>
-							<li><a href="#">Commentaires</a></li>
-							<li><a href="#">Conditions générales</a></li>
-							<li><a href="#">Confidentialité</a></li>
-							{%- elsif page.language == "en" -%}
-							<li><a href="#">Contact us</a></li>
-							<li><a href="#">Current opportunities</a></li>
-							<li><a href="#">Transparency</a></li>
-							<li><a href="#">Feedback</a></li>
-							<li><a href="{{termsUrl}}">Terms and conditions</a></li>
-							<li><a href="{{privacyUrl}}">Privacy</a></li>
-							{%- endif -%}
+		<div class="container pt-4">
+			{%- if page.language == "fr" -%}
+				<h3 class="h2 text-white">Bureau du vérificateur général du Canada</h3>
+			{%- else -%}
+				<h3 class="h2 text-white">Office of the Auditor General of Canada</h3>
+			{%- endif -%}
+			<nav class="my-4 pt-0" aria-label="{% if page.lang == 'fr' %}Pied de page{% else %}Footer{% endif %}">
+				<div class="row">
+					<div class="col-md-3 col-xs-12">
+						{%- if page.language == "fr" -%}
+						<h4 class="oag-footer-heading">Courrier</h4>
+						<address>
+							240, rue&nbsp;Sparks<br>
+							Ottawa <abbr title="Ontario">ON</abbr>&nbsp;&nbsp;K1A&nbsp;0G6
+						</address>
+						<h4 class="oag-footer-heading">Courriel</h4>
+						<p><a href="mailto:communications@oag-bvg.gc.ca">communications@oag-bvg.gc.ca</a></p>
+						<h4 class="oag-footer-heading">Téléphone</h4>
+						<p><a href="tel:1-888-761-5953">1-888-761-5953</a></p>
+						<h4 class="oag-footer-heading">
+							Service d’<abbr title="Appareil de télécommunications pour les personnes malentendantes">ATS</abbr>
+						</h4>
+						<p><a href="tel:613-954-8042">613-954-8042</a></p>
+						{%- else -%}
+						<h4 class="oag-footer-heading">Mail</h4>
+						<address>
+							240 Sparks Street<br>
+							Ottawa <abbr title="Ontario">ON</abbr>&nbsp;&nbsp;K1A&nbsp;0G6
+						</address>
+						<h4 class="oag-footer-heading">Email</h4>
+						<p><a href="mailto:communications@oag-bvg.gc.ca">communications@oag-bvg.gc.ca</a></p>
+						<h4 class="oag-footer-heading">Telephone</h4>
+						<p><a href="tel:1-888-761-5953">1-888-761-5953</a></p>
+						<h4 class="oag-footer-heading">
+							<abbr title="Telecommunications device service for the hearing impaired">TTY</abbr> Service
+						</h4>
+						<p><a href="tel:613-954-8042">613-954-8042</a></p>
+						{%- endif -%}
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						{%- if page.language == "fr" -%}
+						<h4 class="oag-footer-heading">Général</h4>
+						<ul class="oag-footer-links">
+							<li><a href="/content/canadasite/fr/verificateur-general.html">Accueil</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/a-propos-de-nous.html">À propos de nous</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/notre-travail.html">Notre travail</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/salle-medias.html">Salle des médias</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/carrieres.html">Carrières</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/contactez-nous.html">Nous joindre</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/petitions-environnementales.html">Pétitions environnementales</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/transparence.html">Transparence</a></li>
 						</ul>
-					</nav>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-12">
+						<h4 class="oag-footer-heading">Éditions</h4>
+						<ul class="oag-footer-links">
+							<li><a href="/content/canadasite/fr/verificateur-general/notre-travail/rapports-daudit.html">Publications</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/transparence.html">Rapports organisationnels</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/notre-travail.html#upcoming-reports">Rapports à venir</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/notre-travail/suivi-concernant-des-audits-anterieurs.html">Suivi concernant des audits antérieurs</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/notre-travail/autres-ressources.html">Autres ressources</a></li>
+						</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-12">
+						<h4 class="oag-footer-heading">Autres</h4>
+						<ul class="oag-footer-links">
+							<li><a href="/content/canadasite/fr/verificateur-general/carrieres/etudiants-et-jeunes-diplomes.html">Étudiants et nouveaux diplômés</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/developpement-durable.html">Développement durable</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/transparence/plan-sur-laccessibilite.html">Accessibilité</a></li>
+							<li><a href="/content/canadasite/fr/verificateur-general/divulgation-d-actes-reprehensibles.html">Divulgation d’actes répréhensibles</a></li>
+						</ul>
+						{%- else -%}
+						<h4 class="oag-footer-heading">General</h4>
+						<ul class="oag-footer-links">
+							<li><a href="/content/canadasite/en/auditor-general.html">Home</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/about-us.html">About us</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/our-work.html">Our work</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/media-room.html">Media room</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/careers.html">Careers</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/contact-us.html">Contact&nbsp;us</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/environmental-petitions.html">Environmental petitions</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/transparency.html">Transparency</a></li>
+						</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-12">
+						<h4 class="oag-footer-heading">Publishings</h4>
+						<ul class="oag-footer-links">
+							<li><a href="/content/canadasite/en/auditor-general/our-work/audit-reports.html">Publications</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/transparency.html">Corporate reports</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/our-work.html#upcoming-reports">Upcoming reports</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/our-work/update-on-past-audits.html">Update on past audits</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/our-work/other-resources.html">Other resources</a></li>
+						</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-12">
+						<h4 class="oag-footer-heading">Other</h4>
+						<ul class="oag-footer-links">
+							<li><a href="/content/canadasite/en/auditor-general/careers/students-and-recent-graduates.html">Students and recent graduates</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/sustainable-development.html">Sustainable development</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/transparency/accessibility-plan.html">Accessibility</a></li>
+							<li><a href="/content/canadasite/en/auditor-general/disclosures-of-wrongdoing.html">Disclosures of wrongdoing</a></li>
+						</ul>
+						{%- endif -%}
+					</div>
+					<div class="col-md-3 col-xs-12">
+						{%- if page.language == "fr" -%}
+						<h4 class="oag-footer-heading">Restez branchés</h4>
+						<p>Suivez le <abbr title="Bureau du vérificateur général du Canada">BVG</abbr> dans les médias sociaux pour obtenir de l’information sur notre travail, nos rapports et nos publications prévues.</p>
+						{%- else -%}
+						<h4 class="oag-footer-heading">Stay connected</h4>
+						<p>Follow the <abbr title="Office of the Auditor General of Canada">OAG</abbr> on social media for information about our work, reports and upcoming publications.</p>
+						{%- endif -%}
+						<section class="gc-followus">
+							{%- if page.language == "fr" -%}
+							<h6 class="wb-inv">Sur les réseaux sociaux</h6>
+							<ul class="list-inline mt-2">
+								<li><a href="https://www.facebook.com/BVGCanada/" rel="external" class="facebook"><span class="wb-inv">Facebook: </span>BVGCanada</a></li>
+								<li><a href="https://x.com/BVG_OAG" rel="external" class="x-social"><span class="wb-inv">X: </span>@BVG_OAG</a></li>
+								<li><a href="https://www.youtube.com/channel/UC9R8P8560HzUGWlwH5uCtAA" rel="external" class="youtube"><span class="wb-inv">YouTube: </span>Bureau du vérificateur général du Canada @bvgcanada</a></li>
+								<li><a href="https://www.instagram.com/bvg_oag/" rel="external" class="instagram"><span class="wb-inv">Instagram: </span>bvg_oag</a></li>
+								<li><a href="https://www.linkedin.com/company/office-of-the-auditor-general-of-canada" rel="external" class="linkedin"><span class="wb-inv">LinkedIn: </span>Office of the Auditor General of Canada</a></li>
+							</ul>
+							{%- else -%}
+							<h5 class="wb-inv">On social media</h5>
+							<ul class="list-inline mt-2">
+								<li><a href="https://www.facebook.com/OAGCanada/" rel="external" class="facebook"><span class="wb-inv">Facebook: </span>OAGCanada</a></li>
+								<li><a href="https://x.com/OAG_BVG/" rel="external" class="x-social"><span class="wb-inv">X: </span>@OAG_BVG</a></li>
+								<li><a href="https://www.youtube.com/channel/UC7UiIATFGs8x6cvNJiIRHVw" rel="external" class="youtube"><span class="wb-inv">YouTube: </span>Office of the Auditor General of Canada</a></li>
+								<li><a href="https://www.instagram.com/oag_bvg/" rel="external" class="instagram"><span class="wb-inv">Instagram: </span>oag_bvg</a></li>
+								<li><a href="https://www.linkedin.com/company/office-of-the-auditor-general-of-canada" rel="external" class="linkedin"><span class="wb-inv">LinkedIn: </span>Office of the Auditor General of Canada</a></li>
+							</ul>
+							{%- endif -%}
+						</section>
+					</div>
 				</div>
-				<div class="col-xs-12 col-sm-5 col-md-4 pt-3 hght-inhrt">
-					<img class="img-responsive" src="{{ i18nText-soag-footer-img }}"
-						alt="{{ i18nText-soag-footer }}" />
+			</nav>
+		</div>
+	</div>
+	<div class="gc-sub-footer">
+			<div class="container d-sm-flex align-items-center">
+				<nav>
+					<h3 class="wb-inv">Government of Canada Corporate</h3>
+					{%- if page.language == "fr" -%}
+					<h4 class="wb-inv">Bureau du vérificateur général du Canada</h4>
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="/content/canadasite/fr/verificateur-general/avis.html">Avis</a></li>
+						<li class="list-inline-item"><a href="/content/canadasite/fr/verificateur-general/transparence/enonce-de-protection-des-renseignements-personnels.html">Confidentialité</a></li>
+					</ul>
+					{%- else -%}
+					<h4 class="wb-inv">Office of the Auditor General of Canada</h4>
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="/content/canadasite/en/auditor-general/terms-and-conditions.html">Terms and conditions</a></li>
+						<li class="list-inline-item"><a href="/content/canadasite/en/auditor-general/transparency/privacy-statement.html">Privacy</a></li>
+					</ul>
+					{%- endif -%}
+				</nav>
+				<div class="wtrmrk align-self-end mt-4 mt-sm-0">
+					{%- if page.language == "fr" -%}
+					<img class="img-responsive" src="https://canada.ca/content/dam/oag-bvg/core-pages-assets/homepage-assets/icons/oag-logo-blk-fr.svg"
+						 alt="Symbole du Bureau du vérificateur général du Canada"/>
+					{%- else -%}
+					<img class="img-responsive" src="https://canada.ca/content/dam/oag-bvg/core-pages-assets/homepage-assets/icons/oag-logo-blk-en.svg"
+						 alt="Symbol of the Office of the Auditor General of Canada"/>
+					{%- endif -%}
 				</div>
 			</div>
 		</div>
-	</div>	
 </footer>
 {% endunless %}
