@@ -15,9 +15,9 @@
 
 	/* OAG Report type label colors */
 	--oag-report-01: #852828;
-	--oag-report-02: #977E42;
+	--oag-report-02: #8C7337;
 	--oag-report-03: #005e59;
-	--oag-report-04: #6c8a5a;
+	--oag-report-04: #617f4f;
 
 	/* OAG Neutral colors */
 	--oag-neutral-01: #ebd9ab;
@@ -736,7 +736,7 @@
 		&[data-report-type='special-examinations'], 
 		&[data-report-type='other-products'] {
 			background: var(--oag-report-02);
-			color: #333;
+			color: #fff;
 		}
 
 		~ time {
@@ -989,8 +989,8 @@
 		
 		.form-group > label, fieldset > legend {
 			/* Label styling for filter fields */
-			color: var(--oag-default-border-color);
-			font-weight: 100;
+			color: var(--oag-footer);
+			font-weight: 300;
 			font-size: .85em;
 		}
 
